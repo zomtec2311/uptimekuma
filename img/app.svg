@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Uptime Kuma</title>
+  <desc id="desc">Uptime Kuma incidents icon</desc>
+  <path fill="#ffffff" d="M32 4 8 13v17c0 14.4 9.5 24.9 24 30 14.5-5.1 24-15.6 24-30V13L32 4z"/>
+  <path fill="#0082c9" d="M32 8.8 13 16v13.5c0 11.8 7.4 20.4 19 24.8 11.6-4.4 19-13 19-24.8V16L32 8.8z"/>
+  <path fill="#ffffff" d="M16 38.5h7.2l4.4-10.7 5.1 15 4.6-8.3H48v4.5H40l-7.1 12.7-5.1-14.8-1.7 5.8H16z"/>
+</svg>

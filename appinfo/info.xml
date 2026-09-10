@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>uptimekuma</id>
+    <name>Uptime Kuma Incidents</name>
+    <summary>Manage Uptime Kuma incidents from Nextcloud</summary>
+    <description>Manage Uptime Kuma instances and incidents from the Nextcloud administration interface.</description>
+    <version>0.3.5</version>
+    <licence>agpl</licence>
+    <author mail="admin@example.invalid">Uptime Kuma Incidents</author>
+    <namespace>UptimeKuma</namespace>
+    <category>admin</category>
+    <dependencies>
+        <nextcloud min-version="32" max-version="35"/>
+    </dependencies>
+    <navigations>
+        <navigation role="admin">
+            <id>uptimekuma</id>
+            <name>Uptime Kuma</name>
+            <route>uptimekuma.page.index</route>
+            <order>50</order>
+            <icon>app.svg</icon>
+            <type>settings</type>
+        </navigation>
+    </navigations>
+</info>

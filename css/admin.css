@@ -1,0 +1,178 @@
+#uptimekuma-admin {
+	/* display: flex; */
+     width: 100%;
+	justify-content: center;
+    padding-left: 10%;
+	padding-right: 5%;
+}
+.uptimekuma-admin {
+    /*background-color: white;*/
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+    overflow-y: auto;
+}
+
+.uptimekuma-admin .section {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-large);
+}
+
+.uptimekuma-admin .uk-card {
+    margin-top: 20px;
+}
+
+.uptimekuma-admin .uk-help-card {
+    padding: 16px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-large);
+}
+
+.uptimekuma-admin .uk-steps {
+    margin-bottom: 12px;
+}
+
+.uptimekuma-admin .uk-steps li {
+    margin: 7px 0;
+}
+
+.uptimekuma-admin .uk-help-note,
+.uptimekuma-admin .uk-help-text,
+.uptimekuma-admin .uk-job-help {
+    color: var(--color-text-maxcontrast);
+}
+
+.uptimekuma-admin .uk-job-help {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-left: 4px solid var(--color-primary-element);
+    background: var(--color-background-hover);
+}
+
+.uptimekuma-admin .uk-job-help ul {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.uptimekuma-admin .uk-toolbar {
+    margin: 14px 0;
+}
+
+.uptimekuma-admin .uk-button-help {
+    margin: 6px 0 0;
+    color: var(--color-text-maxcontrast);
+    font-size: 13px;
+}
+
+.uptimekuma-admin .uk-actions-cell {
+    min-width: 150px;
+}
+
+.uptimekuma-admin .uk-test-actions summary {
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.uptimekuma-admin .uk-test-actions button {
+    margin: 3px 3px 3px 0;
+}
+
+.uptimekuma-admin .uk-state {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.uptimekuma-admin .uk-state-active {
+    background: var(--color-warning);
+    color: var(--color-main-text);
+}
+
+.uptimekuma-admin .uk-state-failed {
+    background: var(--color-error);
+    color: var(--color-main-text);
+    /*color: #fff;*/
+}
+
+.uptimekuma-admin .uk-state-resolved {
+    background: var(--color-success);
+    color: var(--color-main-text);
+    /*color: #fff;*/
+}
+
+.uptimekuma-admin .uk-state-none {
+    background: var(--color-background-hover);
+    color: var(--color-text-maxcontrast);
+}
+
+.uptimekuma-admin .uk-error {
+    display: block;
+    max-width: 320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uptimekuma-admin .uk-token-card {
+    padding: 16px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-large);
+}
+
+.uptimekuma-admin .uk-token-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.uptimekuma-admin .uk-token {
+    margin-top: 16px;
+    padding: 14px;
+    border: 1px solid var(--color-warning);
+    background: var(--color-background-hover);
+    border-radius: var(--border-radius-large);
+}
+
+.uptimekuma-admin .uk-token-value,
+.uptimekuma-admin .uk-api-url-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.uptimekuma-admin .uk-token-value code,
+.uptimekuma-admin .uk-api-url-row code {
+    display: block;
+    flex: 1;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.uptimekuma-admin .uk-api-url {
+    margin: 12px 0;
+}
+
+.uptimekuma-admin .uk-api-url small {
+    display: block;
+    color: var(--color-text-maxcontrast);
+}
+
+.uptimekuma-admin .uk-security-note {
+    margin-top: 18px;
+}
+
+.uptimekuma-admin button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
