@@ -6,14 +6,21 @@ namespace OCA\UptimeKuma\Service;
 use OCA\UptimeKuma\Db\Instance;
 use OCA\UptimeKuma\Db\InstanceMapper;
 use OCP\Security\ICrypto;
+use OCP\IL10N;
 use RuntimeException;
 
 class InstanceService {
+     private $l;
+
     public function __construct(
         private InstanceMapper $mapper,
         private ICrypto $crypto,
         private KumaClient $kumaClient,
-    ) {}
+        IL10N $l,
+    ) {
+        $this->l = $l;
+
+    }
 
     public function create(string $name, string $url, string $username, string $password): Instance {
         $name = trim($name);
@@ -21,11 +28,11 @@ class InstanceService {
         $username = trim($username);
 
         if ($name === '' || $url === '' || $username === '' || $password === '') {
-            throw new RuntimeException('Alle Felder sind erforderlich.');
+            throw new RuntimeException($this->l->t('All fields are required.'));
         }
 
         if (!filter_var($url, FILTER_VALIDATE_URL)) {
-            throw new RuntimeException('Ungültige URL.');
+            throw new RuntimeException($this->l->t('Invalid URL.'));
         }
 
         $now = time();

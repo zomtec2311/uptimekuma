@@ -3,30 +3,28 @@ declare(strict_types=1);
 
 namespace OCA\UptimeKuma\Service;
 
+use OCP\IL10N;
 use RuntimeException;
 
-/**
- * Minimal RFC 6455 WebSocket client used by KumaClient.
- *
- * This keeps the app self-contained so an administrator does not need
- * Composer or any additional PHP package after installing the app.
- */
 class KumaWebSocket {
     /** @var resource|null */
     private $stream = null;
 
-    public function __construct(private int $timeout = 15) {
+    public function __construct(
+        private IL10N $l,
+        private int $timeout = 15
+    ) {
     }
 
     public function connect(string $url): void {
         $parts = parse_url($url);
         if (!$parts || empty($parts['host'])) {
-            throw new RuntimeException('Ungültige WebSocket-URL.');
+            throw new RuntimeException($this->l->t('Invalid WebSocket URL.'));
         }
 
         $scheme = strtolower((string)($parts['scheme'] ?? ''));
         if (!in_array($scheme, ['ws', 'wss'], true)) {
-            throw new RuntimeException('Nur ws:// und wss:// werden unterstützt.');
+            throw new RuntimeException($this->l->t('Only ws:// and wss:// are supported.'));
         }
 
         $host = (string)$parts['host'];
@@ -64,7 +62,7 @@ class KumaWebSocket {
         );
 
         if (!is_resource($stream)) {
-            throw new RuntimeException('WebSocket-Verbindung fehlgeschlagen: ' . ($error !== '' ? $error : 'Fehler ' . $errno));
+            throw new RuntimeException($this->l->t('WebSocket connection failed:').' ' . ($error !== '' ? $error : $this->l->t('Error').' ' . $errno));
         }
 
         $this->stream = $stream;
@@ -88,14 +86,14 @@ class KumaWebSocket {
             $response = $this->readHttpHeaders();
 
             if (!preg_match('/^HTTP\/1\.1\s+101\s+/i', $response)) {
-                throw new RuntimeException('WebSocket-Handshake abgelehnt.');
+                throw new RuntimeException($this->l->t('WebSocket handshake rejected.'));
             }
 
             $headers = $this->parseHeaders($response);
             $accept = $headers['sec-websocket-accept'] ?? '';
             $expected = base64_encode(sha1($key . '258EAFA5-E914-47DA-95CA-C5AB0DC85B11', true));
             if (!hash_equals($expected, trim($accept))) {
-                throw new RuntimeException('Ungültige WebSocket-Handshake-Antwort.');
+                throw new RuntimeException($this->l->t('Invalid WebSocket handshake response.'));
             }
         } catch (\Throwable $e) {
             $this->close();
@@ -123,7 +121,7 @@ class KumaWebSocket {
             }
             if ($opcode === 0x8) {
                 $this->close();
-                throw new RuntimeException('Kuma hat die WebSocket-Verbindung geschlossen.');
+                throw new RuntimeException($this->l->t('Kuma has closed the WebSocket connection.'));
             }
         }
     }
@@ -142,7 +140,7 @@ class KumaWebSocket {
 
     private function sendFrame(int $opcode, string $payload): void {
         if (!is_resource($this->stream)) {
-            throw new RuntimeException('WebSocket ist nicht verbunden.');
+            throw new RuntimeException($this->l->t('WebSocket is not connected.'));
         }
 
         $length = strlen($payload);
@@ -173,7 +171,7 @@ class KumaWebSocket {
         $length = $second & 0x7F;
 
         if (($first & 0x80) === 0) {
-            throw new RuntimeException('Fragmentierte WebSocket-Nachrichten werden nicht unterstützt.');
+            throw new RuntimeException($this->l->t('Fragmented WebSocket messages are not supported.'));
         }
 
         if ($length === 126) {
@@ -181,7 +179,7 @@ class KumaWebSocket {
         } elseif ($length === 127) {
             $parts = unpack('N2', $this->readBytes(8));
             if (($parts[1] ?? 0) !== 0) {
-                throw new RuntimeException('Zu große WebSocket-Nachricht.');
+                throw new RuntimeException($this->l->t('Too large WebSocket message.'));
             }
             $length = $parts[2] ?? 0;
         }
@@ -204,11 +202,11 @@ class KumaWebSocket {
         while (!str_contains($response, "\r\n\r\n")) {
             $chunk = fread($this->stream, 1024);
             if ($chunk === false || $chunk === '') {
-                throw new RuntimeException('Keine gültige WebSocket-Handshake-Antwort erhalten.');
+                throw new RuntimeException($this->l->t('No valid WebSocket handshake response received.'));
             }
             $response .= $chunk;
             if (strlen($response) > 65536) {
-                throw new RuntimeException('WebSocket-Handshake-Antwort ist zu groß.');
+                throw new RuntimeException($this->l->t('Too large WebSocket handshake response'));
             }
         }
         return $response;
@@ -235,9 +233,9 @@ class KumaWebSocket {
             if ($chunk === false || $chunk === '') {
                 $meta = stream_get_meta_data($this->stream);
                 if (!empty($meta['timed_out'])) {
-                    throw new RuntimeException('WebSocket-Timeout.');
+                    throw new RuntimeException($this->l->t('WebSocket Timeout'));
                 }
-                throw new RuntimeException('WebSocket-Verbindung unerwartet beendet.');
+                throw new RuntimeException($this->l->t('WebSocket connection unexpectedly terminated.'));
             }
             $result .= $chunk;
         }
@@ -250,7 +248,7 @@ class KumaWebSocket {
         while ($offset < $length) {
             $written = fwrite($this->stream, substr($data, $offset));
             if ($written === false || $written === 0) {
-                throw new RuntimeException('Schreiben auf WebSocket fehlgeschlagen.');
+                throw new RuntimeException($this->l->t('Writing on WebSocket failed.'));
             }
             $offset += $written;
         }

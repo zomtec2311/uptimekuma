@@ -4,14 +4,18 @@ declare(strict_types=1);
 namespace OCA\UptimeKuma\Service;
 
 use OCP\Security\ICrypto;
+use OCP\IL10N;
+use OCA\UptimeKuma\Service\KumaWebSocket;
 use RuntimeException;
 
 class KumaClient {
-    private KumaWebSocket $client;
     private int $eventId = 0;
 
-    public function __construct(private ICrypto $crypto) {
-        $this->client = new KumaWebSocket(15);
+    public function __construct(
+        private ICrypto $crypto,
+        private KumaWebSocket $client,
+        private IL10N $l
+    ) {
     }
 
     public function test(string $url, string $username, string $encryptedPassword): void {
@@ -30,7 +34,7 @@ class KumaClient {
             $result = $this->emit('postIncident', [$slug, ['title' => $title, 'content' => $content, 'style' => $style]]);
             $id = $this->extractId($result);
             if ($id === null) {
-                throw new RuntimeException('Kuma hat keine Incident-ID zurückgegeben.');
+                throw new RuntimeException($this->l->t('Kuma did not return an incident ID.'));
             }
             return $id;
         } finally {
@@ -58,18 +62,13 @@ class KumaClient {
         }
     }
 
-    /**
-     * Returns the current incident history from Uptime Kuma 2.5.x.
-     * This uses Kuma's authenticated Socket.IO API so the result is not
-     * affected by the public status-page cache.
-     */
     public function getIncidentHistory(string $url, string $username, string $encryptedPassword, string $slug): array {
         $this->connect($url);
         try {
             $this->login($username, $this->crypto->decrypt($encryptedPassword));
             $result = $this->emit('getIncidentHistory', [$slug, null]);
             if (($result['ok'] ?? false) !== true) {
-                throw new RuntimeException((string)($result['msg'] ?? 'Kuma konnte die Incident-Historie nicht liefern.'));
+                throw new RuntimeException((string)($result['msg'] ?? $this->l->t('Kuma could not deliver the incident history.')));
             }
             return is_array($result['incidents'] ?? null) ? $result['incidents'] : [];
         } finally {
@@ -80,14 +79,14 @@ class KumaClient {
     private function login(string $username, string $password): void {
         $result = $this->emit('login', ['username' => $username, 'password' => $password, 'token' => null]);
         if (isset($result['error']) || (isset($result['ok']) && $result['ok'] === false)) {
-            throw new RuntimeException('Kuma-Login fehlgeschlagen.');
+            throw new RuntimeException($this->l->t('Kuma login failed.'));
         }
     }
 
     private function connect(string $baseUrl): void {
         $parts = parse_url(rtrim($baseUrl, '/'));
         if (!$parts || empty($parts['host'])) {
-            throw new RuntimeException('Ungültige Kuma-URL.');
+            throw new RuntimeException($this->l->t('Invalid Kuma URL'));
         }
 
         $scheme = ($parts['scheme'] ?? 'https') === 'https' ? 'wss' : 'ws';
@@ -98,15 +97,11 @@ class KumaClient {
         $this->client->connect($wsUrl);
         $hello = $this->client->receive();
         if (substr($hello, 0, 1) !== '0') {
-            throw new RuntimeException('Unerwartete Engine.IO-Antwort.');
+            throw new RuntimeException($this->l->t('Unexpected Engine.IO response.'));
         }
 
         $this->client->send('40');
 
-        // Uptime Kuma 2.x registers its login handler asynchronously while
-        // sending the initial "info" event. Sending "login" immediately
-        // after the Socket.IO CONNECT packet can therefore race the server's
-        // handler registration. Wait for "info" before authenticating.
         $connected = false;
         $infoReceived = false;
         $deadline = microtime(true) + 15.0;
@@ -135,10 +130,10 @@ class KumaClient {
         }
 
         if (!$connected) {
-            throw new RuntimeException('Socket.IO-Verbindung konnte nicht aufgebaut werden.');
+            throw new RuntimeException($this->l->t('Socket.IO connection could not be established.'));
         }
         if (!$infoReceived) {
-            throw new RuntimeException('Kuma hat keine initiale Info-Antwort gesendet.');
+            throw new RuntimeException($this->l->t('Kuma did not send an initial info response.'));
         }
     }
 
@@ -161,7 +156,7 @@ class KumaClient {
                 $payload = substr($response, 2 + strlen((string)$this->eventId));
                 $decoded = json_decode($payload, true);
                 if (!is_array($decoded)) {
-                    throw new RuntimeException('Ungültige Kuma-Callback-Antwort: ' . substr($response, 0, 500));
+                    throw new RuntimeException($this->l->t('Invalid Kuma callback response:').' ' . substr($response, 0, 500));
                 }
                 return $decoded[0] ?? [];
             }

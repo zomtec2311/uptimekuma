@@ -9,11 +9,17 @@ use OCP\AppFramework\Http\JSONResponse;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\PublicPage;
 use OCP\IRequest;
+use OCP\IL10N;
 use Psr\Log\LoggerInterface;
 
 class ApiController extends Controller {
-    public function __construct(IRequest $request,private TokenService $tokens,private JobMapper $jobs,private JobService $service, private readonly LoggerInterface $logger,)
-    {parent::__construct('uptimekuma',$request);}
+     private $l;
+
+    public function __construct(IRequest $request,private TokenService $tokens,private JobMapper $jobs,private JobService $service, private readonly LoggerInterface $logger, IL10N $l,)
+    {
+        $this->l = $l;
+        parent::__construct('uptimekuma',$request);
+    }
 
     #[PublicPage]
     #[NoCSRFRequired]
@@ -37,7 +43,7 @@ class ApiController extends Controller {
         try{
             $t=$this->tokens->authenticate($raw);
             $j=$this->jobs->find($t->getJobId());
-            if(!$j->getEnabled())throw new \RuntimeException('Job ist deaktiviert.');
+            if(!$j->getEnabled())throw new \RuntimeException($this->l->t('Job is deactivated.'));
             if($action==='start'){
                 $i=$this->service->start($j);
                 return new JSONResponse(['ok'=>true,'state'=>$i->getState()]);
@@ -46,7 +52,7 @@ class ApiController extends Controller {
                 $this->service->resolve($j);
                 return new JSONResponse(['ok'=>true,'state'=>'resolved']);
             }
-            $msg=trim((string)$this->request->getParam('message','Backup fehlgeschlagen'));
+            $msg=trim((string)$this->request->getParam('message',$this->l->t('Backup failed')));
             $i=$this->service->failed($j,$msg);
             return new JSONResponse(['ok'=>true,'state'=>$i->getState()]);
         }

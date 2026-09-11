@@ -176,3 +176,81 @@
     opacity: .5;
     cursor: not-allowed;
 }
+
+/* Container-Verhalten */
+.uk-card form.job-form {
+	width: 100% !important;
+	max-width: 800px !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 16px !important;
+	margin-top: 12px !important;
+}
+
+/* Zeilen als Flexbox */
+.job-form .form-row {
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 16px !important;
+	width: 100% !important;
+}
+
+/* Gleichmäßige Drittelung für Zeile 1 */
+.job-form .form-group {
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 6px !important;
+	flex: 1 1 0px !important;
+	min-width: 0 !important;
+}
+
+/* Volle Breite für Titel und Textarea */
+.job-form .form-group.form-group--full {
+	flex: 1 1 100% !important;
+}
+
+.job-form .form-group label {
+	font-weight: 600 !important;
+	font-size: 0.85rem !important;
+	color: var(--color-text-maxcontrast) !important;
+}
+
+/*
+ * Brechen der Nextcloud-Standardbreiten:
+ * Hohe Spezifität erzwingt Ausfüllen des Flex-Containers
+ */
+.job-form .form-group input[type="text"],
+.job-form .form-group select,
+.job-form .form-group textarea {
+	width: 100% !important;
+	min-width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box !important;
+	margin: 0 !important;
+}
+
+.job-form textarea {
+	resize: vertical !important;
+	min-height: 80px !important;
+}
+
+/* Aktionen-Zeile unten */
+.job-form .form-row--actions {
+	align-items: flex-end !important;
+}
+
+.job-form .form-row--actions .form-group:first-child {
+	flex: 0 0 180px !important; /* "Style" Select begrenzen */
+}
+
+.job-form .checkbox-wrapper {
+	display: flex !important;
+	align-items: center !important;
+	padding-bottom: 8px !important;
+}
+
+.job-form .button-group {
+	display: flex !important;
+	gap: 8px !important;
+	margin-left: auto !important;
+}

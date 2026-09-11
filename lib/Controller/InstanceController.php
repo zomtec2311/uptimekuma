@@ -9,13 +9,18 @@ use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\IRequest;
 use OCP\AppFramework\Http\Attribute\AdminRequired;
+use OCP\IL10N;
 
 class InstanceController extends Controller {
+    private $l;
+
     public function __construct(
         IRequest $request,
         private InstanceMapper $mapper,
         private InstanceService $service,
+        IL10N $l,
     ) {
+        $this->l = $l;
         parent::__construct('uptimekuma', $request);
     }
 
@@ -49,7 +54,7 @@ class InstanceController extends Controller {
     public function test(int $id): JSONResponse {
         try {
             $this->service->test($this->mapper->find($id));
-            return new JSONResponse(['ok' => true, 'message' => 'Verbindung und Login erfolgreich.']);
+            return new JSONResponse(['ok' => true, 'message' => $this->l->t('Connection and login successful.')]);
         } catch (\Throwable $e) {
             return new JSONResponse(['ok' => false, 'message' => $e->getMessage()], 400);
         }

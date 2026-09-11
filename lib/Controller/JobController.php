@@ -8,15 +8,22 @@ use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\AppFramework\Http\Attribute\AdminRequired;
 use OCP\IRequest;
+use OCP\IL10N;
 
 class JobController extends Controller {
+    private $l;
+
     public function __construct(
         IRequest $request,
         private JobMapper $jobs,
         private IncidentMapper $incidents,
         private JobService $service,
-        private TokenService $tokens
-    ) { parent::__construct('uptimekuma', $request); }
+        private TokenService $tokens,
+        IL10N $l,
+    ) {
+        $this->l = $l;
+        parent::__construct('uptimekuma', $request);
+    }
 
     #[AdminRequired]
     public function index(): JSONResponse {
@@ -65,7 +72,7 @@ class JobController extends Controller {
     #[AdminRequired]
     public function resolve(int $id): JSONResponse { try { $this->service->resolve($this->jobs->find($id)); return new JSONResponse(['ok'=>true,'state'=>'resolved']); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
     #[AdminRequired]
-    public function failed(int $id): JSONResponse { try { $msg=trim((string)$this->request->getParam('message','Backup fehlgeschlagen')); if($msg==='')$msg='Backup fehlgeschlagen'; $i=$this->service->failed($this->jobs->find($id),$msg); return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
+    public function failed(int $id): JSONResponse { try { $msg=trim((string)$this->request->getParam('message',$this->l->t('Backup failed'))); if($msg==='')$msg=$this->l->t('Backup failed'); $i=$this->service->failed($this->jobs->find($id),$msg); return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
 
     #[AdminRequired]
     public function sync(int $id): JSONResponse {
