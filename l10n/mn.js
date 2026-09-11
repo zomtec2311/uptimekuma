@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Осолгүй",
     "Active": "Active",
     "Resolved": "Resolved",
-    "Select instance…": "Жишээ сонгох..."
+    "Select instance…": "Жишээ сонгох...",
+    "New Job": "Шинэ ажил"
 },
 "nplurals=2; plural=n != 1;");

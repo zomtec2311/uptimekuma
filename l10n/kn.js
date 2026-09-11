@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "ಘಟನೆ ಇಲ್ಲ",
     "Active": "ಸಕ್ರಿಯ",
     "Resolved": "ಪರಿಹರಿಸಲಾಗಿದೆ",
-    "Select instance…": "Select instance…"
+    "Select instance…": "Select instance…",
+    "New Job": "New Job"
 },
 "nplurals=2; plural=n > 1;");

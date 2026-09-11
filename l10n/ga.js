@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Gan Eachtra",
     "Active": "Gníomhach",
     "Resolved": "Réitíodh",
-    "Select instance…": "Roghnaigh sampla…"
+    "Select instance…": "Roghnaigh sampla…",
+    "New Job": "Jab Nua"
 },
 "nplurals=5; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n >= 3 && n <= 6) ? 2 : ((n >= 7 && n <= 10) ? 3 : 4)));");

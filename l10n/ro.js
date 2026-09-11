@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Niciun incident",
     "Active": "Activ",
     "Resolved": "Rezolvat",
-    "Select instance…": "Selectaţi instanţa.."
+    "Select instance…": "Selectaţi instanţa..",
+    "New Job": "Nou loc de muncă"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);");

@@ -116,6 +116,7 @@ OC.L10N.register(
     "No Incident": "لا حادث",
     "Active": "النشاط",
     "Resolved": "يحل",
-    "Select instance…": "حالة مختارة.."
+    "Select instance…": "حالة مختارة..",
+    "New Job": "الوظائف الجديدة"
 },
 "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));");

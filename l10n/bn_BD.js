@@ -116,6 +116,7 @@ OC.L10N.register(
     "No Incident": "কোনো তথ্য নেই",
     "Active": "সক্রিয়",
     "Resolved": "মীমাংসা করা হয়েছে",
-    "Select instance…": "নির্বাচন করুন.."
+    "Select instance…": "নির্বাচন করুন..",
+    "New Job": "নতুন কাজ"
 },
 "nplurals=2; plural=n > 1;");

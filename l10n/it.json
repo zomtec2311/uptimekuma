@@ -116,7 +116,8 @@
         "No Incident": "No Incident",
         "Active": "Attivo",
         "Resolved": "Risolto",
-        "Select instance…": "Selezionare l'istanza.."
+        "Select instance…": "Selezionare l'istanza..",
+        "New Job": "Nuovo lavoro"
     },
     "pluralForm": "nplurals=2; plural=(n != 1);"
 }

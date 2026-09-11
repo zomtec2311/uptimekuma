@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Tidak ada Insiden",
     "Active": "Aktif",
     "Resolved": "Dipecahkan",
-    "Select instance…": "Pilih instansi.."
+    "Select instance…": "Pilih instansi..",
+    "New Job": "Tugas Baru"
 },
 "nplurals=1; plural=0;");

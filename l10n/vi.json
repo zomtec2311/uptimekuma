@@ -116,7 +116,8 @@
         "No Incident": "Không có lý do",
         "Active": "Hoạt động",
         "Resolved": "Giải quyết",
-        "Select instance…": "Chọn thể hiện.."
+        "Select instance…": "Chọn thể hiện..",
+        "New Job": "Công việc mới"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

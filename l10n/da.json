@@ -116,7 +116,8 @@
         "No Incident": "Ingen hændelser",
         "Active": "Aktiv",
         "Resolved": "Opløst",
-        "Select instance…": "Vælg instans.."
+        "Select instance…": "Vælg instans..",
+        "New Job": "Nyt job"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

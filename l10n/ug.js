@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "ۋەقە يوق",
     "Active": "ئاكتىپ",
     "Resolved": "ھەل بولدى",
-    "Select instance…": "مىسالنى تاللاڭ…"
+    "Select instance…": "مىسالنى تاللاڭ…",
+    "New Job": "يېڭى خىزمەت"
 },
 "nplurals=2; plural=n != 1;");

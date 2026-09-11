@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Nincs eset",
     "Active": "Aktív",
     "Resolved": "Megoldva",
-    "Select instance…": "Példa kiválasztása.."
+    "Select instance…": "Példa kiválasztása..",
+    "New Job": "Új feladat"
 },
 "nplurals=2; plural=n != 1;");

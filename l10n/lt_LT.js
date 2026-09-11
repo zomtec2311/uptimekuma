@@ -116,6 +116,7 @@ OC.L10N.register(
     "No Incident": "Incidento nėra",
     "Active": "Aktyvus",
     "Resolved": "NAME OF TRANSLATORS",
-    "Select instance…": "Parinkite paveikslėlį.."
+    "Select instance…": "Parinkite paveikslėlį..",
+    "New Job": "Naujas darbas"
 },
 "nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);");

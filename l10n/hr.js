@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Nema incidenta",
     "Active": "Aktivan",
     "Resolved": "Riješeno",
-    "Select instance…": "Odaberite instancu…"
+    "Select instance…": "Odaberite instancu…",
+    "New Job": "Novi posao"
 },
 "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);");

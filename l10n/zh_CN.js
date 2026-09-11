@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "无事件",
     "Active": "活动",
     "Resolved": "决定",
-    "Select instance…": "选择实例.."
+    "Select instance…": "选择实例..",
+    "New Job": "新建任务"
 },
 "nplurals=1; plural=0;");

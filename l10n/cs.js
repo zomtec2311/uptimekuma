@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Žádný incident",
     "Active": "Aktivní",
     "Resolved": "Vyřešeno",
-    "Select instance…": "Vyberte instanci.."
+    "Select instance…": "Vyberte instanci..",
+    "New Job": "Nová práce"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);");

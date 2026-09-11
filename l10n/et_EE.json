@@ -116,7 +116,8 @@
         "No Incident": "Intsident puudub",
         "Active": "Aktiivselt",
         "Resolved": "Lahendatud",
-        "Select instance…": "Vali eksemplari.."
+        "Select instance…": "Vali eksemplari..",
+        "New Job": "Uus töö"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

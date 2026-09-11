@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Sense desenvolupament",
     "Active": "Actiu",
     "Resolved": "Resolt",
-    "Select instance…": "Selecció d' instància.."
+    "Select instance…": "Selecció d' instància..",
+    "New Job": "Tasca nova"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);");

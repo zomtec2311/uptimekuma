@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Κανένα περιστατικό",
     "Active": "Ενεργό",
     "Resolved": "Επίλυση",
-    "Select instance…": "Επιλογή περιστατικού.."
+    "Select instance…": "Επιλογή περιστατικού..",
+    "New Job": "Νέα εργασία"
 },
 "nplurals=2; plural=n != 1;");

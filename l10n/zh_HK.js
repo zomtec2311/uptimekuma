@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "無事故",
     "Active": "活躍",
     "Resolved": "已解決",
-    "Select instance…": "選擇執行個體…"
+    "Select instance…": "選擇執行個體…",
+    "New Job": "新工作"
 },
 "nplurals=1; plural=0;");

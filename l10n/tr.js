@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Hiçbir olay",
     "Active": "Aktif",
     "Resolved": "Çözüldü",
-    "Select instance…": "Örneğin.."
+    "Select instance…": "Örneğin..",
+    "New Job": "Yeni İş"
 },
 "nplurals=2; plural=n != 1;");

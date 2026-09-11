@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Gertaerarik ez",
     "Active": "Aktibo",
     "Resolved": "Ebatzita",
-    "Select instance…": "Hautatu instantzia.."
+    "Select instance…": "Hautatu instantzia..",
+    "New Job": "Lan berria"
 },
 "nplurals=2; plural=n != 1;");

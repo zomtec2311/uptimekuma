@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "គ្មានឧប្បត្តិហេតុទេ។",
     "Active": "Active",
     "Resolved": "Resolved",
-    "Select instance…": "Select instance…"
+    "Select instance…": "Select instance…",
+    "New Job": "ការងារថ្មី។"
 },
 "nplurals=1; plural=0;");

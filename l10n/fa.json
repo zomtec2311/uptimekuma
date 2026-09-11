@@ -116,7 +116,8 @@
         "No Incident": "هیچ حادثه ای",
         "Active": "Active",
         "Resolved": "حل شده",
-        "Select instance…": "انتخاب مثال .."
+        "Select instance…": "انتخاب مثال ..",
+        "New Job": "شغل جدید"
     },
     "pluralForm": "nplurals=2; plural=n > 1;"
 }

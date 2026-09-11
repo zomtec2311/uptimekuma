@@ -116,7 +116,8 @@
         "No Incident": "Hesabat",
         "Active": "Daxili",
         "Resolved": "Tarix",
-        "Select instance…": "Qeydiyyatdan.."
+        "Select instance…": "Qeydiyyatdan..",
+        "New Job": "Yeni İş"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

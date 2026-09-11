@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Không có lý do",
     "Active": "Hoạt động",
     "Resolved": "Giải quyết",
-    "Select instance…": "Chọn thể hiện.."
+    "Select instance…": "Chọn thể hiện..",
+    "New Job": "Công việc mới"
 },
 "nplurals=1; plural=0;");

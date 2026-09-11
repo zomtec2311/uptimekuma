@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "ไม่ปรากฏ",
     "Active": "ทํางาน",
     "Resolved": "เรียกคืนข้อมูล",
-    "Select instance…": "เลือกตัวอย่าง.."
+    "Select instance…": "เลือกตัวอย่าง..",
+    "New Job": "งานพิมพ์ใหม่"
 },
 "nplurals=1; plural=0;");

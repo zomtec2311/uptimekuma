@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Intsident puudub",
     "Active": "Aktiivselt",
     "Resolved": "Lahendatud",
-    "Select instance…": "Vali eksemplari.."
+    "Select instance…": "Vali eksemplari..",
+    "New Job": "Uus töö"
 },
 "nplurals=2; plural=n != 1;");

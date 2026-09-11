@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Ei vaaratilannetta",
     "Active": "Aktiivinen",
     "Resolved": "Selvitetty",
-    "Select instance…": "Valitse esimerkki"
+    "Select instance…": "Valitse esimerkki",
+    "New Job": "Uusi työ"
 },
 "nplurals=2; plural=n != 1;");

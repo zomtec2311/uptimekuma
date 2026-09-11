@@ -116,7 +116,8 @@
         "No Incident": "Tidak ada Insiden",
         "Active": "Aktif",
         "Resolved": "Dipecahkan",
-        "Select instance…": "Pilih instansi.."
+        "Select instance…": "Pilih instansi..",
+        "New Job": "Tugas Baru"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

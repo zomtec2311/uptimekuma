@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Ekkert atvik",
     "Active": "Virkur",
     "Resolved": "Leyst",
-    "Select instance…": "Veldu dæmi…"
+    "Select instance…": "Veldu dæmi…",
+    "New Job": "Nýtt starf"
 },
 "nplurals=2; plural=n % 10 != 1 || n % 100 == 11;");

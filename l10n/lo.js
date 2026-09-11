@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "No Incident",
     "Active": "Active",
     "Resolved": "ແກ້ໄຂແລ້ວ",
-    "Select instance…": "ເລືອກຕົວຢ່າງ..."
+    "Select instance…": "ເລືອກຕົວຢ່າງ...",
+    "New Job": "New Job"
 },
 "nplurals=1; plural=0;");

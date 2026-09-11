@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "هیچ حادثه ای",
     "Active": "Active",
     "Resolved": "حل شده",
-    "Select instance…": "انتخاب مثال .."
+    "Select instance…": "انتخاب مثال ..",
+    "New Job": "شغل جدید"
 },
 "nplurals=2; plural=n > 1;");

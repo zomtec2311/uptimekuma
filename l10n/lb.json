@@ -116,7 +116,8 @@
         "No Incident": "No Incident",
         "Active": "Active",
         "Resolved": "Geléist",
-        "Select instance…": "Select instance…"
+        "Select instance…": "Select instance…",
+        "New Job": "Neien Job"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

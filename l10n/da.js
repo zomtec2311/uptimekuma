@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Ingen hændelser",
     "Active": "Aktiv",
     "Resolved": "Opløst",
-    "Select instance…": "Vælg instans.."
+    "Select instance…": "Vælg instans..",
+    "New Job": "Nyt job"
 },
 "nplurals=2; plural=n != 1;");

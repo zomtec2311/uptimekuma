@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Hesabat",
     "Active": "Daxili",
     "Resolved": "Tarix",
-    "Select instance…": "Qeydiyyatdan.."
+    "Select instance…": "Qeydiyyatdan..",
+    "New Job": "Yeni İş"
 },
 "nplurals=2; plural=n != 1;");

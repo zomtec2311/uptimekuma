@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "Dim Digwyddiad",
     "Active": "Actif",
     "Resolved": "Penderfynwyd",
-    "Select instance…": "Dewiswch enghraifft…"
+    "Select instance…": "Dewiswch enghraifft…",
+    "New Job": "Swydd Newydd"
 },
 "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));");

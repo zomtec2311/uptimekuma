@@ -116,7 +116,8 @@
         "No Incident": "គ្មានឧប្បត្តិហេតុទេ។",
         "Active": "Active",
         "Resolved": "Resolved",
-        "Select instance…": "Select instance…"
+        "Select instance…": "Select instance…",
+        "New Job": "ការងារថ្មី។"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

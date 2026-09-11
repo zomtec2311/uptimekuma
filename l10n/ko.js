@@ -117,6 +117,7 @@ OC.L10N.register(
     "No Incident": "법적고지",
     "Active": "지원하다",
     "Resolved": "해결 된",
-    "Select instance…": "선택하기 .."
+    "Select instance…": "선택하기 ..",
+    "New Job": "새로운 직업"
 },
 "nplurals=1; plural=0;");

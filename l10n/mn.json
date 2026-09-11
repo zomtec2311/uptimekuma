@@ -116,7 +116,8 @@
         "No Incident": "Осолгүй",
         "Active": "Active",
         "Resolved": "Resolved",
-        "Select instance…": "Жишээ сонгох..."
+        "Select instance…": "Жишээ сонгох...",
+        "New Job": "Шинэ ажил"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }
