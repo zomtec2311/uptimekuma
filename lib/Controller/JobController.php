@@ -38,6 +38,7 @@ class JobController extends Controller {
                 $row['currentErrorMessage'] = $i->getErrorMessage();
                 $row['currentCreatedAt'] = $i->getCreatedAt();
                 $row['currentResolvedAt'] = $i->getResolvedAt();
+                $row['currenttokens'] = $this->mytokens($j->getId());
             } else {
                 $row['currentState'] = 'none';
                 $row['currentIncidentId'] = null;
@@ -45,6 +46,7 @@ class JobController extends Controller {
                 $row['currentErrorMessage'] = '';
                 $row['currentCreatedAt'] = null;
                 $row['currentResolvedAt'] = null;
+                $row['currenttokens'] = null;
             }
             $out[] = $row;
         }
@@ -91,6 +93,7 @@ class JobController extends Controller {
     }
 
     #[AdminRequired] public function tokens(int $id): JSONResponse { return new JSONResponse($this->tokens->list($id)); }
+    #[AdminRequired] public function mytokens(int $id): array { return [count($this->tokens->list($id))]; }
     #[AdminRequired] public function createToken(int $id): JSONResponse { try { $p=$this->request->getParams(); return new JSONResponse($this->tokens->create($id,(string)($p['description']??''),isset($p['expiresAt'])&&$p['expiresAt']!==''?(int)$p['expiresAt']:null)); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
     #[AdminRequired] public function deleteToken(int $id): JSONResponse { $this->tokens->delete($id); return new JSONResponse(['ok'=>true]); }
 

@@ -72,6 +72,7 @@
 
 .uptimekuma-admin .uk-actions-cell {
     min-width: 150px;
+    padding: 20px;
 }
 
 .uptimekuma-admin .uk-test-actions summary {
@@ -253,4 +254,44 @@
 	display: flex !important;
 	gap: 8px !important;
 	margin-left: auto !important;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-row h2 {
+  margin: 0;
+}
+
+.uptime-bar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 24px;
+  /*flex: 1;*/
+  transform: translateY(2px);
+  max-width: 260px;
+}
+
+.segment {
+  flex: 1;
+  min-width: 4px;
+  height: 16px;
+  /*background: #55d394;*/
+  border-radius: 999px;
+}
+
+.uptime-bar .segment.status-up {
+  background-color: #55d394 !important;
+}
+
+.uptime-bar .segment.status-warning {
+  background-color: #f5c451 !important;
+}
+
+.uptime-bar .segment.status-down {
+  background-color: #ef6262 !important;
 }
