@@ -31,6 +31,7 @@ namespace OCA\UptimeKuma\Controller;
 use OCA\UptimeKuma\Db\JobMapper;
 use OCA\UptimeKuma\Service\JobService;
 use OCA\UptimeKuma\Service\TokenService;
+use OCA\UptimeKuma\Service\JobHistoryService;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
@@ -42,7 +43,7 @@ use Psr\Log\LoggerInterface;
 class ApiController extends Controller {
      private $l;
 
-    public function __construct(IRequest $request,private TokenService $tokens,private JobMapper $jobs,private JobService $service, private readonly LoggerInterface $logger, IL10N $l,)
+    public function __construct(IRequest $request,private TokenService $tokens,private JobHistoryService $history,private JobMapper $jobs,private JobService $service, private readonly LoggerInterface $logger, IL10N $l,)
     {
         $this->l = $l;
         parent::__construct('uptimekuma',$request);
@@ -66,24 +67,41 @@ class ApiController extends Controller {
         return $this->run($token,'failed');
     }
 
-    private function run(string $raw,string $action):JSONResponse{
-        try{
-            $t=$this->tokens->authenticate($raw);
-            $j=$this->jobs->find($t->getJobId());
-            if(!$j->getEnabled())throw new \RuntimeException($this->l->t('Job is deactivated.'));
-            if($action==='start'){
-                $i=$this->service->start($j);
+    private function run(string $raw, string $action): JSONResponse {
+        $tokenEntity = null;
+        $jobId = null;
+        $source = $this->history->source('external-api');
+
+        try {
+            $tokenEntity = $this->tokens->authenticate($raw);
+            $jobId = $tokenEntity->getJobId();
+            $j = $this->jobs->find($jobId);
+
+            if (!$j->getEnabled()) {
+                throw new \RuntimeException('Job ist deaktiviert.');
+            }
+
+            if ($action === 'start') {
+                $i = $this->service->start($j);
+                $this->history->log($jobId, 'start', $source, true, '', $tokenEntity->getId());
                 return new JSONResponse(['ok'=>true,'state'=>$i->getState()]);
             }
-            if($action==='resolve'){
+
+            if ($action === 'resolve') {
                 $this->service->resolve($j);
+                $this->history->log($jobId, 'resolve', $source, true, '', $tokenEntity->getId());
                 return new JSONResponse(['ok'=>true,'state'=>'resolved']);
             }
-            $msg=trim((string)$this->request->getParam('message',$this->l->t('Backup failed')));
-            $i=$this->service->failed($j,$msg);
+
+            $msg = trim((string)$this->request->getParam('message', 'Fehler gemeldet'));
+            if ($msg === '') {
+                $msg = 'Fehler gemeldet';
+            }
+            $i = $this->service->failed($j, $msg);
+            $this->history->log($jobId, 'failed', $source, true, '', $tokenEntity->getId());
             return new JSONResponse(['ok'=>true,'state'=>$i->getState()]);
-        }
-        catch(\Throwable $e){
+        } catch (\Throwable $e) {
+            $this->history->log($jobId, $action, $source, false, $e->getMessage(), $tokenEntity?->getId());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }
     }

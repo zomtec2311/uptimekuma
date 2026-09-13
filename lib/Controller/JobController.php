@@ -29,7 +29,7 @@ declare(strict_types=1);
 namespace OCA\UptimeKuma\Controller;
 
 use OCA\UptimeKuma\Db\{JobMapper, IncidentMapper};
-use OCA\UptimeKuma\Service\{JobService, TokenService};
+use OCA\UptimeKuma\Service\{JobService, TokenService, JobHistoryService};
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\AppFramework\Http\Attribute\AdminRequired;
@@ -45,6 +45,7 @@ class JobController extends Controller {
         private IncidentMapper $incidents,
         private JobService $service,
         private TokenService $tokens,
+        private JobHistoryService $history,
         IL10N $l,
     ) {
         $this->l = $l;
@@ -117,10 +118,12 @@ class JobController extends Controller {
     #[AdminRequired]
     public function start(int $id): JSONResponse {
         try {
-            $i = $this->service->start($this->jobs->find($id));
+            $job = $this->jobs->find($id);
+            $i = $this->service->start($job);
+            $this->history->log($id, 'start', $this->history->source('admin-test'), true);
             return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]);
-        }
-        catch (\Throwable $e) {
+        } catch (\Throwable $e) {
+            $this->history->log($id, 'start', $this->history->source('admin-test'), false, $e->getMessage());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }
     }
@@ -128,10 +131,12 @@ class JobController extends Controller {
     #[AdminRequired]
     public function resolve(int $id): JSONResponse {
         try {
-            $this->service->resolve($this->jobs->find($id));
+            $job = $this->jobs->find($id);
+            $this->service->resolve($job);
+            $this->history->log($id, 'resolve', $this->history->source('admin-test'), true);
             return new JSONResponse(['ok'=>true,'state'=>'resolved']);
-        }
-        catch (\Throwable $e) {
+        } catch (\Throwable $e) {
+            $this->history->log($id, 'resolve', $this->history->source('admin-test'), false, $e->getMessage());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }
     }
@@ -139,12 +144,13 @@ class JobController extends Controller {
     #[AdminRequired]
     public function failed(int $id): JSONResponse {
         try {
-            $msg = trim((string)$this->request->getParam('message', $this->l->t('Backup failed')));
-            if($msg==='') $msg=$this->l->t('Backup failed');
-            $i = $this->service->failed($this->jobs->find($id),$msg);
+            $msg=trim((string)$this->request->getParam('message','Backup fehlgeschlagen'));
+            if($msg==='')$msg='Backup fehlgeschlagen';
+            $i=$this->service->failed($this->jobs->find($id),$msg);
+            $this->history->log($id, 'failed', $this->history->source('admin-test'), true);
             return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]);
-        }
-        catch (\Throwable $e) {
+        } catch (\Throwable $e) {
+            $this->history->log($id, 'failed', $this->history->source('admin-test'), false, $e->getMessage());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }
     }
@@ -153,6 +159,7 @@ class JobController extends Controller {
     public function sync(int $id): JSONResponse {
         try {
             $incident = $this->service->sync($this->jobs->find($id));
+            $this->history->log($id, 'sync', $this->history->source('admin-sync'), true);
             return new JSONResponse([
                 'ok' => true,
                 'state' => $incident->getState(),
@@ -161,6 +168,7 @@ class JobController extends Controller {
                 'kuma' => $this->service->getLastSyncInfo(),
             ]);
         } catch (\Throwable $e) {
+            $this->history->log($id, 'sync', $this->history->source('admin-sync'), false, $e->getMessage());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }
     }
