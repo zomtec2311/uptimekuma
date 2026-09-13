@@ -1,6 +1,13 @@
-# Uptime Kuma Incidents – Nextcloud App 0.3.0
+# Uptime Kuma Incidents – Nextcloud App
 
-The app controls messages to Uptime Kuma. It does not run backups itself.
+**Manage Uptime Kuma instances and incidents from the Nextcloud administration interface.**
+
+- 🛡️ **Admin Only:** Exclusively accessible for system administrators.
+- 🚦 **Incident Management:** Trigger incidents directly from Nextcloud with custom styles (info, warning, success, danger).
+- 🔄 **Lifecycle Control:** Resolve ongoing incidents or simulate service failures with a single click.
+- 🔑 **Token-Based API:** Secure REST endpoint for external scripts and automation workflows.
+- 🎯 **Granular Access:** Assign individual API tokens to specific jobs for fine-grained authorization.
+- 🤖 **Script Automation:** Easily execute status updates automatically from outside.
 
 ## Establishment
 
@@ -28,9 +35,16 @@ Under **Test actions**, the Job view contains the three actions Start, Failed an
 
 
 
-# Uptime Kuma Incidents – Nextcloud App 0.3.0
+# Uptime Kuma Incidents – Nextcloud App
 
-Die App steuert Meldungen an Uptime Kuma. Sie führt selbst keine Backups aus.
+**Verwalten Sie Uptime Kuma-Instanzen und -Vorfälle über die Nextcloud-Administrationsoberfläche.**
+
+- 🛡️ **Nur für Administratoren:** Ausschließlich für Systemadministratoren zugänglich.
+- 🚦 **Vorfalls-Management:** Erstelle Incidents direkt aus Nextcloud mit verschiedenen Status-Farben (Info, Warning, Success, Danger).
+- 🔄 **Lebenszyklus-Steuerung:** Löse bestehende Incidents mit einem Klick auf oder simuliere Systemausfälle.
+- 🔑 **Token-basierte API:** Sichere Schnittstelle für externe Skripte und Automatisierungs-Workflows.
+- 🎯 **Granulare Rechte:** Weise einzelnen Jobs spezifische API-Token für präzise Zugriffskontrolle zu.
+- 🤖 **Skript-Automatisierung:** Steuere Statusseiten vollständig automatisiert von außen.
 
 ## Einrichtung
 
