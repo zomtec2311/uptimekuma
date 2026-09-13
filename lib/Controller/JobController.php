@@ -72,7 +72,7 @@ class JobController extends Controller {
                 $row['currentErrorMessage'] = '';
                 $row['currentCreatedAt'] = null;
                 $row['currentResolvedAt'] = null;
-                $row['currenttokens'] = null;
+                $row['currenttokens'] = 0;
             }
             $out[] = $row;
         }
@@ -171,8 +171,8 @@ class JobController extends Controller {
     }
 
     #[AdminRequired]
-    public function mytokens(int $id): array {
-        return [count($this->tokens->list($id))];
+    public function mytokens(int $id): int {
+        return count($this->tokens->list($id));
     }
 
     #[AdminRequired] public function createToken(int $id): JSONResponse { try { $p=$this->request->getParams(); return new JSONResponse($this->tokens->create($id,(string)($p['description']??''),isset($p['expiresAt'])&&$p['expiresAt']!==''?(int)$p['expiresAt']:null)); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
