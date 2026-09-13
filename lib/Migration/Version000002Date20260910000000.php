@@ -1,11 +1,88 @@
 <?php
+/**
+ *
+ * UptimeKuma APP (Nextcloud)
+ *
+ * @author Wolfgang Tödt <wtoedt@gmail.com>
+ *
+ * @copyright Copyright (c) 2026 Wolfgang Tödt
+ *
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 declare(strict_types=1);
+
 namespace OCA\UptimeKuma\Migration;
-use Closure;use OCP\DB\ISchemaWrapper;use OCP\Migration\IOutput;use OCP\Migration\SimpleMigrationStep;
+
+use Closure;
+use OCP\DB\ISchemaWrapper;
+use OCP\Migration\IOutput;
+use OCP\Migration\SimpleMigrationStep;
+
 class Version000002Date20260910000000 extends SimpleMigrationStep {
- public function changeSchema(IOutput $output, Closure $schemaClosure, array $options): ?ISchemaWrapper { $schema=$schemaClosure();
-  if(!$schema->hasTable('uptimekuma_jobs')){$t=$schema->createTable('uptimekuma_jobs');$t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);$t->addColumn('name','string',['length'=>128,'notnull'=>true]);$t->addColumn('instance_id','bigint',['notnull'=>true,'unsigned'=>true]);$t->addColumn('status_slug','string',['length'=>255,'notnull'=>true]);$t->addColumn('title','string',['length'=>255,'notnull'=>true]);$t->addColumn('content','text',['notnull'=>true]);$t->addColumn('style','string',['length'=>32,'notnull'=>true]);$t->addColumn('enabled','smallint',['notnull'=>true,'default'=>1]);$t->addColumn('created_at','bigint',['notnull'=>true]);$t->addColumn('updated_at','bigint',['notnull'=>true]);$t->setPrimaryKey(['id']);$t->addIndex(['instance_id'],'uk_job_instance');}
-  if(!$schema->hasTable('uptimekuma_incidents')){$t=$schema->createTable('uptimekuma_incidents');$t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);$t->addColumn('job_id','bigint',['notnull'=>true,'unsigned'=>true]);$t->addColumn('kuma_incident_id','bigint',['notnull'=>true]);$t->addColumn('title','string',['length'=>255,'notnull'=>true]);$t->addColumn('content','text',['notnull'=>true]);$t->addColumn('style','string',['length'=>32,'notnull'=>true]);$t->addColumn('state','string',['length'=>16,'notnull'=>true]);$t->addColumn('error_message','text',['notnull'=>true]);$t->addColumn('created_at','bigint',['notnull'=>true]);$t->addColumn('resolved_at','bigint',['notnull'=>false]);$t->setPrimaryKey(['id']);$t->addIndex(['job_id','state'],'uk_inc_job_state');}
-  if(!$schema->hasTable('uptimekuma_tokens')){$t=$schema->createTable('uptimekuma_tokens');$t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);$t->addColumn('job_id','bigint',['notnull'=>true,'unsigned'=>true]);$t->addColumn('token_hash','string',['length'=>255,'notnull'=>true]);$t->addColumn('description','string',['length'=>255,'notnull'=>true]);$t->addColumn('enabled','smallint',['notnull'=>true,'default'=>1]);$t->addColumn('last_used_at','bigint',['notnull'=>false]);$t->addColumn('created_at','bigint',['notnull'=>true]);$t->addColumn('expires_at','bigint',['notnull'=>false]);$t->setPrimaryKey(['id']);$t->addUniqueIndex(['token_hash'],'uk_token_hash');$t->addIndex(['job_id'],'uk_token_job');}
-  return $schema; }
+
+  public function changeSchema(IOutput $output, Closure $schemaClosure, array $options): ?ISchemaWrapper {
+    $schema=$schemaClosure();
+    if(!$schema->hasTable('uptimekuma_jobs')){
+      $t=$schema->createTable('uptimekuma_jobs');
+      $t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('name','string',['length'=>128,'notnull'=>true]);
+      $t->addColumn('instance_id','bigint',['notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('status_slug','string',['length'=>255,'notnull'=>true]);
+      $t->addColumn('title','string',['length'=>255,'notnull'=>true]);
+      $t->addColumn('content','text',['notnull'=>true]);
+      $t->addColumn('style','string',['length'=>32,'notnull'=>true]);
+      $t->addColumn('enabled','smallint',['notnull'=>true,'default'=>1]);
+      $t->addColumn('created_at','bigint',['notnull'=>true]);
+      $t->addColumn('updated_at','bigint',['notnull'=>true]);
+      $t->setPrimaryKey(['id']);
+      $t->addIndex(['instance_id'],'uk_job_instance');
+    }
+
+    if(!$schema->hasTable('uptimekuma_incidents')) {
+      $t=$schema->createTable('uptimekuma_incidents');
+      $t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('job_id','bigint',['notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('kuma_incident_id','bigint',['notnull'=>true]);
+      $t->addColumn('title','string',['length'=>255,'notnull'=>true]);
+      $t->addColumn('content','text',['notnull'=>true]);
+      $t->addColumn('style','string',['length'=>32,'notnull'=>true]);
+      $t->addColumn('state','string',['length'=>16,'notnull'=>true]);
+      $t->addColumn('error_message','text',['notnull'=>true]);
+      $t->addColumn('created_at','bigint',['notnull'=>true]);
+      $t->addColumn('resolved_at','bigint',['notnull'=>false]);
+      $t->setPrimaryKey(['id']);$t->addIndex(['job_id','state'],'uk_inc_job_state');
+    }
+
+    if(!$schema->hasTable('uptimekuma_tokens')) {
+      $t=$schema->createTable('uptimekuma_tokens');
+      $t->addColumn('id','bigint',['autoincrement'=>true,'notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('job_id','bigint',['notnull'=>true,'unsigned'=>true]);
+      $t->addColumn('token_hash','string',['length'=>255,'notnull'=>true]);
+      $t->addColumn('description','string',['length'=>255,'notnull'=>true]);
+      $t->addColumn('enabled','smallint',['notnull'=>true,'default'=>1]);
+      $t->addColumn('last_used_at','bigint',['notnull'=>false]);
+      $t->addColumn('created_at','bigint',['notnull'=>true]);
+      $t->addColumn('expires_at','bigint',['notnull'=>false]);
+      $t->setPrimaryKey(['id']);
+      $t->addUniqueIndex(['token_hash'],'uk_token_hash');
+      $t->addIndex(['job_id'],'uk_token_job');
+    }
+
+    return $schema;
+  }
 }

@@ -1,5 +1,31 @@
 <?php
+/**
+ *
+ * UptimeKuma APP (Nextcloud)
+ *
+ * @author Wolfgang Tödt <wtoedt@gmail.com>
+ *
+ * @copyright Copyright (c) 2026 Wolfgang Tödt
+ *
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 declare(strict_types=1);
+
 namespace OCA\UptimeKuma\Controller;
 
 use OCA\UptimeKuma\Db\{JobMapper, IncidentMapper};
@@ -54,27 +80,74 @@ class JobController extends Controller {
     }
 
     #[AdminRequired]
-    public function create(): JSONResponse { try { return new JSONResponse($this->ser($this->service->create($this->request->getParams()))); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
+    public function create(): JSONResponse {
+        try {
+            return new JSONResponse($this->ser($this->service->create($this->request->getParams())));
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['error'=>$e->getMessage()],400);
+        }
+    }
+
     #[AdminRequired]
-    public function update(int $id): JSONResponse { try { return new JSONResponse($this->ser($this->service->update($id,$this->request->getParams()))); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
+    public function update(int $id): JSONResponse {
+        try {
+            return new JSONResponse($this->ser($this->service->update($id,$this->request->getParams())));
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['error'=>$e->getMessage()],400);
+        }
+    }
+
     #[AdminRequired]
-    public function destroy(int $id): JSONResponse { $this->jobs->delete($this->jobs->find($id)); return new JSONResponse(['ok'=>true]); }
+    public function destroy(int $id): JSONResponse {
+        $this->jobs->delete($this->jobs->find($id));
+        return new JSONResponse(['ok'=>true]);
+    }
 
     #[AdminRequired]
     public function incidents(int $id): JSONResponse {
         return new JSONResponse(array_map(fn($i)=>[
-            'id'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId(),'state'=>$i->getState(),
-            'title'=>$i->getTitle(),'content'=>$i->getContent(),'style'=>$i->getStyle(),
-            'errorMessage'=>$i->getErrorMessage(),'createdAt'=>$i->getCreatedAt(),'resolvedAt'=>$i->getResolvedAt()
+            'id' => $i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId(),'state'=>$i->getState(),
+            'title' => $i->getTitle(),'content'=>$i->getContent(),'style'=>$i->getStyle(),
+            'errorMessage' => $i->getErrorMessage(),'createdAt'=>$i->getCreatedAt(),'resolvedAt'=>$i->getResolvedAt()
         ],$this->incidents->findAllByJob($id)));
     }
 
     #[AdminRequired]
-    public function start(int $id): JSONResponse { try { $i=$this->service->start($this->jobs->find($id)); return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
+    public function start(int $id): JSONResponse {
+        try {
+            $i = $this->service->start($this->jobs->find($id));
+            return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]);
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
+        }
+    }
+
     #[AdminRequired]
-    public function resolve(int $id): JSONResponse { try { $this->service->resolve($this->jobs->find($id)); return new JSONResponse(['ok'=>true,'state'=>'resolved']); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
+    public function resolve(int $id): JSONResponse {
+        try {
+            $this->service->resolve($this->jobs->find($id));
+            return new JSONResponse(['ok'=>true,'state'=>'resolved']);
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
+        }
+    }
+
     #[AdminRequired]
-    public function failed(int $id): JSONResponse { try { $msg=trim((string)$this->request->getParam('message',$this->l->t('Backup failed'))); if($msg==='')$msg=$this->l->t('Backup failed'); $i=$this->service->failed($this->jobs->find($id),$msg); return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]); } catch (\Throwable $e) { return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400); } }
+    public function failed(int $id): JSONResponse {
+        try {
+            $msg = trim((string)$this->request->getParam('message', $this->l->t('Backup failed')));
+            if($msg==='') $msg=$this->l->t('Backup failed');
+            $i = $this->service->failed($this->jobs->find($id),$msg);
+            return new JSONResponse(['ok'=>true,'state'=>$i->getState(),'incidentId'=>$i->getId(),'kumaIncidentId'=>$i->getKumaIncidentId()]);
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
+        }
+    }
 
     #[AdminRequired]
     public function sync(int $id): JSONResponse {
@@ -92,8 +165,16 @@ class JobController extends Controller {
         }
     }
 
-    #[AdminRequired] public function tokens(int $id): JSONResponse { return new JSONResponse($this->tokens->list($id)); }
-    #[AdminRequired] public function mytokens(int $id): array { return [count($this->tokens->list($id))]; }
+    #[AdminRequired]
+    public function tokens(int $id): JSONResponse {
+        return new JSONResponse($this->tokens->list($id));
+    }
+
+    #[AdminRequired]
+    public function mytokens(int $id): array {
+        return [count($this->tokens->list($id))];
+    }
+
     #[AdminRequired] public function createToken(int $id): JSONResponse { try { $p=$this->request->getParams(); return new JSONResponse($this->tokens->create($id,(string)($p['description']??''),isset($p['expiresAt'])&&$p['expiresAt']!==''?(int)$p['expiresAt']:null)); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
     #[AdminRequired] public function deleteToken(int $id): JSONResponse { $this->tokens->delete($id); return new JSONResponse(['ok'=>true]); }
 

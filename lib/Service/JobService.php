@@ -1,4 +1,29 @@
 <?php
+/**
+ *
+ * UptimeKuma APP (Nextcloud)
+ *
+ * @author Wolfgang Tödt <wtoedt@gmail.com>
+ *
+ * @copyright Copyright (c) 2026 Wolfgang Tödt
+ *
+ * @license GNU AGPL version 3 or any later version
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
 declare(strict_types=1);
 
 namespace OCA\UptimeKuma\Service;
@@ -15,7 +40,7 @@ class JobService {
         return $this->lastSyncInfo;
     }
 
-    public function __construct(private JobMapper $jobs,private InstanceMapper $instances,private IncidentMapper $incidents,private KumaClient $kuma, IL10N $l,){
+    public function __construct(private JobMapper $jobs,private InstanceMapper $instances,private IncidentMapper $incidents,private KumaClient $kuma, IL10N $l,) {
         $this->l = $l;
     }
 
@@ -90,10 +115,10 @@ class JobService {
     }
 
     public function sync(Job $j): Incident {
-        $i=$this->instances->find($j->getInstanceId());
-        $history=$this->kuma->getIncidentHistory($i->getUrl(),$i->getUsername(),$i->getPasswordEncrypted(),$j->getStatusSlug());
-        $local=$this->incidents->findLatestByJob($j->getId());
-        $remote=null;
+        $i = $this->instances->find($j->getInstanceId());
+        $history = $this->kuma->getIncidentHistory($i->getUrl(),$i->getUsername(),$i->getPasswordEncrypted(),$j->getStatusSlug());
+        $local = $this->incidents->findLatestByJob($j->getId());
+        $remote = null;
 
         foreach($history as $incident){
             if(is_array($incident) && (string)($incident['title']??'') === $j->getTitle() && $this->remoteIncidentIsActive($incident)){
@@ -102,33 +127,33 @@ class JobService {
             }
         }
 
-        if($remote===null && $local){
-        foreach($history as $incident){
-            if(is_array($incident) && isset($incident['id']) && (int)$incident['id']===$local->getKumaIncidentId()){
-            $remote=$incident;
-            break;
+        if($remote === null && $local) {
+            foreach($history as $incident) {
+                if(is_array($incident) && isset($incident['id']) && (int)$incident['id'] === $local->getKumaIncidentId()){
+                    $remote = $incident;
+                    break;
+                }
             }
-        }
         }
 
-        if($remote===null && !$local){
-        foreach($history as $incident){
-            if(is_array($incident) && (string)($incident['title']??'') === $j->getTitle()){
-            $remote=$incident;
-            break;
+        if($remote === null && !$local) {
+            foreach($history as $incident) {
+                if(is_array($incident) && (string)($incident['title']??'') === $j->getTitle()){
+                $remote = $incident;
+                break;
+                }
             }
-        }
         }
 
         if($remote===null){
-        if($local){
-            throw new RuntimeException($this->l->t('The incident was not found in Kuma. The local display has not been changed.'));
-        }
-        throw new RuntimeException($this->l->t('No incident was found for this job. For manually created incidents, the title must correspond exactly to the job title.'));
+            if($local){
+                throw new RuntimeException($this->l->t('The incident was not found in Kuma. The local display has not been changed.'));
+            }
+            throw new RuntimeException($this->l->t('No incident was found for this job. For manually created incidents, the title must correspond exactly to the job title.'));
         }
 
-        $remoteId=(int)($remote['id']??0);
-        $localMatchesRemote=$local && $local->getKumaIncidentId()===$remoteId;
+        $remoteId = (int)($remote['id']??0);
+        $localMatchesRemote=$local && $local->getKumaIncidentId() === $remoteId;
 
         if(!$local || !$localMatchesRemote){
             $local=new Incident();
@@ -152,15 +177,16 @@ class JobService {
         $local->setStyle((string)($remote['style']??$local->getStyle()));
         $active=$this->remoteIncidentIsActive($remote);
         if($active){
-        $style=$local->getStyle();
-        $local->setState($style==='danger'?'failed':'active');
-        $local->setErrorMessage($style==='danger'?$local->getContent():'');
-        $local->setResolvedAt(null);
-        }else{
-        $local->setState('resolved');
-        $local->setErrorMessage('');
-        $updated=$remote['lastUpdatedDate']??$remote['createdDate']??null;
-        $local->setResolvedAt($updated ? (strtotime((string)$updated) ?: time()) : time());
+            $style = $local->getStyle();
+            $local->setState($style === 'danger' ? 'failed' : 'active');
+            $local->setErrorMessage($style === 'danger' ? $local->getContent() : '');
+            $local->setResolvedAt(null);
+        }
+        else {
+            $local->setState('resolved');
+            $local->setErrorMessage('');
+            $updated = $remote['lastUpdatedDate']??$remote['createdDate']??null;
+            $local->setResolvedAt($updated ? (strtotime((string)$updated) ?: time()) : time());
         }
 
         return $local->getId() ? $this->incidents->update($local) : $this->incidents->insert($local);
