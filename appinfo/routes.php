@@ -48,4 +48,5 @@ return ['routes'=>[
     ['name'=>'api#start','url'=>'/api/external/{token}/start','verb'=>'GET'],
     ['name'=>'api#resolve','url'=>'/api/external/{token}/resolve','verb'=>'GET'],
     ['name'=>'api#failed','url'=>'/api/external/{token}/failed','verb'=>'GET'],
+    ['name'=>'history#index','url'=>'/api/history','verb'=>'GET'],
 ]];

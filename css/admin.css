@@ -295,3 +295,119 @@
 .uptime-bar .segment.status-down {
   background-color: #ef6262 !important;
 }
+
+.uptimekuma-admin .uk-history-card {
+    overflow-x: auto;
+}
+
+.uptimekuma-admin .uk-history-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+    margin: 16px 0;
+    padding: 12px;
+    background: var(--color-background-hover);
+    border-radius: var(--border-radius-large);
+}
+
+.uptimekuma-admin .uk-history-filters > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.uptimekuma-admin .uk-history-filters label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.uptimekuma-admin .uk-history-search input {
+    min-width: 240px;
+}
+
+.uptimekuma-admin .uk-history-filter-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 6px;
+}
+
+.uptimekuma-admin .uk-history-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.uptimekuma-admin .uk-history-meta > div {
+    display: flex;
+    gap: 6px;
+}
+
+.uptimekuma-admin .uk-history-table {
+    width: 100%;
+    min-width: 980px;
+    border-collapse: collapse;
+}
+
+.uptimekuma-admin .uk-history-table th,
+.uptimekuma-admin .uk-history-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.uptimekuma-admin .uk-history-table th {
+    white-space: nowrap;
+}
+
+.uptimekuma-admin .uk-history-table tr.uk-history-failed {
+    background: var(--color-error-rgb, rgba(255, 0, 0, .06));
+}
+
+.uptimekuma-admin .uk-history-client {
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uptimekuma-admin .uk-history-token {
+    display: block;
+    color: var(--color-text-maxcontrast);
+    font-size: 11px;
+}
+
+.uptimekuma-admin .uk-history-success,
+.uptimekuma-admin .uk-history-error {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.uptimekuma-admin .uk-history-success {
+    background: #55D394; /*var(--color-success);*/
+    color: #fff;
+}
+
+.uptimekuma-admin .uk-history-error {
+    background: #EF6262; /*var(--color-error);*/
+    color: #fff;
+}
+
+.uptimekuma-admin .uk-history-error-text {
+    display: block;
+    max-width: 260px;
+    margin-top: 4px;
+    overflow-wrap: anywhere;
+}
+
+.uptimekuma-admin .uk-history-empty,
+.uptimekuma-admin .uk-history-loading {
+    padding: 18px;
+    color: var(--color-text-maxcontrast);
+}

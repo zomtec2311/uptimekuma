@@ -1,7 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">Uptime Kuma</title>
-  <desc id="desc">Uptime Kuma incidents icon</desc>
-  <path fill="#ffffff" d="M32 4 8 13v17c0 14.4 9.5 24.9 24 30 14.5-5.1 24-15.6 24-30V13L32 4z"/>
-  <path fill="#0082c9" d="M32 8.8 13 16v13.5c0 11.8 7.4 20.4 19 24.8 11.6-4.4 19-13 19-24.8V16L32 8.8z"/>
-  <path fill="#ffffff" d="M16 38.5h7.2l4.4-10.7 5.1 15 4.6-8.3H48v4.5H40l-7.1 12.7-5.1-14.8-1.7 5.8H16z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   sodipodi:docname="app2.png"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="64"
+       height="64"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <image
+       width="64"
+       height="64"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAABBxJREFU&#10;eJztm0lvEzEUx/+TpG1aKJCCWCTEcgEJECDgAAhuXNgkLiwfhoOzlMKFO18hn4BbDqXtTBoEAlUC&#10;xHpiJyBoGJpkzCFMO6SeGU/GzzNI/CRf6sTP/+f3bMe1gf8kQLWaRck6DYAD4Cib58Bq+aS7Rcvt&#10;2VEU6xfhig4qk+aWxPqplBvWRsgIDirM2qO/43EoW7sRV7RfqZinwLmhU44cpfp+UIn2K8X6RbCF&#10;YT0C+2G1HCrmqcidpiw3G+tpRU9NF1C0LicuVGreMLerEc0aOxIXE7eUzKPRRCeRz7pKef4M7jSG&#10;vHINVKtZPNtxAtePT0fzVDiLS12sGc6qblYNResK8u27BnreIYFzjlbbSa8TAGSoGn7ZtAEAY0Nk&#10;JpRAFgGcrzRrGCncu/xBy/C0u44OMwNBEgEO5+gf87RGAUkEpFOqGOUO+LHUFf7d4WSLTSyUpwAP&#10;EJrGNFAaAc+/2IH1Cx9aKs0pQWkEBI3+ssGURUEu6Q7I8vb7ErauHQr/oCRth2M4m1GXArKT3Juv&#10;vwZqX6V4L8pSQCb8l41GTAO742AkqzZ1lEbAN7ujohlfVIv3osQB60b8f+2JRvvjYlu67SiRNQix&#10;HfDk00/fuhdNcb5vGpObex+/p182Y88BMhufV00buzaMCOsGbTsu7hywPBQvQjYxIiZG5UZydyG/&#10;Ssz3Xx2Mj/h//1NLPk3isBwBqr391e6i4HGQqP2gKNC1qSI7Dyj0RcejCPm8JHF+cP/tYuQ+iSCL&#10;ANHo9Ntw8zDsc6vqAWQUbalJIqDtiAV0+4QNZcKdJEKVeIDIAaJRBYBcJtjc04Al1cXvvGFQMiia&#10;l5S2GBHvb4g9G8PvSAStHIOQA3cWAOClz6ZFNXbHQT63EgluMDd/hm+nlfexbJ537Ws9rxp0wlV+&#10;lsAeFP4ZBxAdpBiJ/Nvms0S4e+lfPVTScwBrrCGzIGDTWLTDjbDVYyCYtRf4+wg/lWnQtDuYGCU5&#10;DTIA7z6gZB2msOLHa8mjMRLxpfpVvyqtFxbCWPjQorHNuE9OVaxjaXIAid2SeU0sfgVtDnj4blGv&#10;eICH3zNksxM6nSDC7jg09pi5L1i8S3H+rC4HdBxH3+gLCAoH4Rco8C6J7360sW2c4AIo5xkYxipN&#10;/juMO41ErqGSiJ+anhCJD+fWvXFoSINWu0sX+pWZndGFe5lsbNPhBIfCAcw8GE+8C5vZrMMJasXP&#10;H1Aj3mVqupC4KGnxc7vUindhtVzi4sIK+bX5HskLFY683x6fAsqnMVFL7wVaAqQhJVhtLb3QMHpr&#10;re5RP6RHXBQq9ZOgFl60Lqfz5ZgX2QeSUUu1mt6HB0JUvSz754T303vFFXFymzuSTGcpYbUcytYF&#10;BAm/PTuaYA81wmp5lK1LALTt3kT8BvqEeXvwABbFAAAAAElFTkSuQmCC&#10;"
+       id="image1" />
+  </g>
 </svg>
