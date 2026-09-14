@@ -46,6 +46,56 @@ To get started follow the instructions.
 
 Under **Test actions**, each job provides three manual actions: Start, Failed, and Resolve. These serve solely for testing the reporting logic. The actual backup or external process runs independently outside of this app.
 
+### Example
+You created a Job with
+
+- **title** "Planned Backup"
+- and **text** "The Nextcloud is currently unavailable due to a planned backup. This process can take 20 to 30 minutes. Nextcloud is then fully available again."
+
+You have generated an API-Token for this Job e.g. **uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006**
+
+The 3 shown URLs are:
+
+```
+- Start: https://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/start
+- Failed http://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/failed
+- Resolve http://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/resolve
+```
+
+You can now use these 3 URLs to e.g. report the start and end of a backup to your Uptime Kuma.
+
+For example, you have a bash script that you use to control a backup of your Nextcloud instance.
+
+Here you can then use the API URLs for only this Job. (Other Jobs with their own title and text have their own API-Tokens):
+
+```
+#!/bin/bash
+
+START_URL="http://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/start"
+FAILED_URL="http://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/failed"
+RESOLVE_URL="http://Your_Nextcloud_Website/index.php/apps/uptimekuma/api/external/uk_ea77b234559fc7ac5e7a53a9382e7ba88de3903a7e20b37b0e36abfa6bbfa006/resolve"
+SOURCE="backup-bash"
+
+curl -fsS -H "X-UptimeKuma-Source: $SOURCE" "$START_URL"
+
+# HERE IS YOUR BACKUP CODE
+
+if meine_aufgabe; then
+    curl -fsS -H "X-UptimeKuma-Source: $SOURCE" "$RESOLVE_URL"
+else
+    curl -fsS -H "X-UptimeKuma-Source: $SOURCE" "$FAILED_URL"
+fi
+```
+
+Your Uptime Kuma status page then automatically received the start incident at the beginning and at the end the Resolve incident and the visitors to your status page now automatically know why your Nextcloud instance was unreachable for the period of the backup without creating incidents manually within your Kuma each time.
+
+You can have a further Job with **info** instead of **warning** with it's own Token to generate an incident for announcing the end of the e.g. backup and that all systems work stable again.
+
+### Summary of the example
+
+- you create a Job with API token once
+- you can use this Job each time you need fully automatically without entering title and text again
+
 ## 💡 F.A.Q.
 
 <details>
