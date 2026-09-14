@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "No history entries found.",
     "The three actions on the job are only intended for manual testing of the messages.": "The three actions on the job are only intended for manual testing of the messages.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.",
+    "Incident started": "Incident started",
+    "Incident started with Kuma-ID: {value}": "Incident started with Kuma-ID: {value}",
+    "Start completed:": "Start completed:",
+    "Start completed: {state}": "Start completed: {state}",
+    "Resolve completed: {state}": "Resolve completed: {state}",
+    "Settings": "Settings",
+    "How many entries per page shall be shown?": "How many entries per page shall be shown?"
 },
 "nplurals=5; plural=(n % 10 == 1 && n % 100 != 11 && n % 100 != 71 && n % 100 != 91) ? 0 : ((n % 10 == 2 && n % 100 != 12 && n % 100 != 72 && n % 100 != 92) ? 1 : ((((n % 10 == 3 || n % 10 == 4) || n % 10 == 9) && (n % 100 < 10 || n % 100 > 19) && (n % 100 < 70 || n % 100 > 79) && (n % 100 < 90 || n % 100 > 99)) ? 2 : ((n != 0 && n % 1000000 == 0) ? 3 : 4)));");

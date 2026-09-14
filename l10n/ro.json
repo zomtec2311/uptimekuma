@@ -190,7 +190,14 @@
         "No history entries found.": "Nu s-au găsit înregistrări istorice.",
         "The three actions on the job are only intended for manual testing of the messages.": "Cele trei acțiuni la locul de muncă sunt destinate numai pentru testarea manuală a mesajelor.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Tratați aceste URL-uri ca o parolă, deoarece jetonul este în ele. În scenariu, jetonul nu ar trebui să fie în fișiere accesibile publicului.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Scenariile externe pot trimite antetul opţional X-UptimeKuma-Source. Acest lucru vă permite să identifice un bash executat, PHP script, Python script sau alt apelant mai precis."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Scenariile externe pot trimite antetul opţional X-UptimeKuma-Source. Acest lucru vă permite să identifice un bash executat, PHP script, Python script sau alt apelant mai precis.",
+        "Incident started": "Incidentul a început",
+        "Incident started with Kuma-ID: {value}": "Incidentul a început cu Kuma-ID: {value}",
+        "Start completed:": "Pornește completat:",
+        "Start completed: {state}": "Începeți completat: {state}",
+        "Resolve completed: {state}": "Rezolvare completă: {state}",
+        "Settings": "Configurări",
+        "How many entries per page shall be shown?": "Câte intrări vor fi afișate pe pagină?"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);"
 }

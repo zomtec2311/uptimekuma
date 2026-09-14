@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Historiako sarrerarik ez da aurkitu.",
     "The three actions on the job are only intended for manual testing of the messages.": "Laneko hiru ekintzak mezuak eskuz probatzeko dira.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Tratatu URL hauek pasahitza bezala, tokena haietan dagoelako. Scriptean, tokena ez litzateke publikoki irakurtzeko moduko fitxategietan egon behar.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Kanpoko scriptek aukerako X-UptimeKuma-Source goiburua bidal dezakete. Honek aukera ematen dizu exekutatutako sare bat, PHP script bat, Python script bat edo beste deitzaile bat zehatzago identifikatzeko."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Kanpoko scriptek aukerako X-UptimeKuma-Source goiburua bidal dezakete. Honek aukera ematen dizu exekutatutako sare bat, PHP script bat, Python script bat edo beste deitzaile bat zehatzago identifikatzeko.",
+    "Incident started": "Gertaera hasi zen",
+    "Incident started with Kuma-ID: {value}": "Kuma-IDrekin hasi zen gertakaria: {value}",
+    "Start completed:": "Hasita:",
+    "Start completed: {state}": "Hasiera osatuta: :",
+    "Resolve completed: {state}": "Ebatzita: :",
+    "Settings": "Ezarpenak",
+    "How many entries per page shall be shown?": "Zenbat sarrera erakutsiko dira orrialdeko?"
 },
 "nplurals=2; plural=n != 1;");

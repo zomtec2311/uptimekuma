@@ -190,7 +190,14 @@
         "No history entries found.": "Hiçbir tarih girişi bulunamadı.",
         "The three actions on the job are only intended for manual testing of the messages.": "İşdeki üç eylem sadece mesajların manuel testleri için tasarlanmıştır.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Bu URL'leri bir şifre gibi tedavi edin çünkü token onların içinde. Senaryoda, token halka açık okunabilir dosyalarda olmamalıdır.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Dış senaryolar Seçmeli X-UptimeKuma-Kaynak başlığı gönderebilir. Bu, idam edilmiş bir bash, PHP senaryosu, Python senaryosu veya diğer çağrıcı daha kesin olarak tanımlamanızı sağlar."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Dış senaryolar Seçmeli X-UptimeKuma-Kaynak başlığı gönderebilir. Bu, idam edilmiş bir bash, PHP senaryosu, Python senaryosu veya diğer çağrıcı daha kesin olarak tanımlamanızı sağlar.",
+        "Incident started": "Olay başladı",
+        "Incident started with Kuma-ID: {value}": "Olay Kuma-ID ile başladı: {value}",
+        "Start completed:": "Tamamlandı:",
+        "Start completed: {state}": "Tamamlandı: {state}",
+        "Resolve completed: {state}": "Tamamlandı: {state}",
+        "Settings": "Ayarlar",
+        "How many entries per page shall be shown?": "Sayfa başına kaç giriş gösteriliyor?"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Nav atrasts neviens vēstures ieraksts.",
     "The three actions on the job are only intended for manual testing of the messages.": "Trīs darbības darbā ir paredzētas tikai ziņojumu manuālai testēšanai.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Apstrādāt šos URL kā paroli, jo marķieris ir tajos. Scenārijā marķierim nevajadzētu būt publiski lasāmos failos.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Ārējie skripti var nosūtīt izvēles X-UptimeKuma-Source header. Tas ļauj precīzāk identificēt izpildīto bash, PHP skriptu, Python skriptu vai citu zvanītāju."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Ārējie skripti var nosūtīt izvēles X-UptimeKuma-Source header. Tas ļauj precīzāk identificēt izpildīto bash, PHP skriptu, Python skriptu vai citu zvanītāju.",
+    "Incident started": "Iedarbināts starpgadījums",
+    "Incident started with Kuma-ID: {value}": "Atgadījums sākās ar Kuma-ID: {value}",
+    "Start completed:": "Sākums pabeigts:",
+    "Start completed: {state}": "Sākums pabeigts: {state}",
+    "Resolve completed: {state}": "Pabeigts: {state}",
+    "Settings": "Iestatījumi",
+    "How many entries per page shall be shown?": "Cik ierakstus lapā uzrāda?"
 },
 "nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);");

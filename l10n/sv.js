@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Inga historieposter hittades.",
     "The three actions on the job are only intended for manual testing of the messages.": "De tre åtgärderna på jobbet är endast avsedda för manuell testning av meddelandena.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Behandla dessa webbadresser som ett lösenord eftersom token är i dem. I manuset ska token inte vara i offentligt läsbara filer.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Externa skript kan skicka den valfria X-UptimeKuma-Source header. Detta låter dig identifiera en utförd bash, PHP script, Python script eller annan uppringare mer exakt."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Externa skript kan skicka den valfria X-UptimeKuma-Source header. Detta låter dig identifiera en utförd bash, PHP script, Python script eller annan uppringare mer exakt.",
+    "Incident started": "Incident började",
+    "Incident started with Kuma-ID: {value}": "Incident började med Kuma-ID: {value}",
+    "Start completed:": "Börja färdig:",
+    "Start completed: {state}": "Börja avslutad: {state}",
+    "Resolve completed: {state}": "Lösning: {state}",
+    "Settings": "Inställningar",
+    "How many entries per page shall be shown?": "Hur många poster per sida ska visas?"
 },
 "nplurals=2; plural=n != 1;");

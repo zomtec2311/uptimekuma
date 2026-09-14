@@ -190,7 +190,14 @@
         "No history entries found.": "Ajalookirjeid ei leitud.",
         "The three actions on the job are only intended for manual testing of the messages.": "Tööl olevad kolm toimingut on mõeldud ainult sõnumite käsitsi testimiseks.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Kohtle neid URL-e nagu parooli, sest nendes on märk. Skripti puhul ei tohiks märgis olla avalikult loetavates failides.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Välised skriptid võivad saata valikulise X- UptimeKuma allika päise. See võimaldab teil täpsemalt tuvastada täidetud bashi, PHP skripti, Pythoni skripti või muud helistajat."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Välised skriptid võivad saata valikulise X- UptimeKuma allika päise. See võimaldab teil täpsemalt tuvastada täidetud bashi, PHP skripti, Pythoni skripti või muud helistajat.",
+        "Incident started": "Intsident algas",
+        "Incident started with Kuma-ID: {value}": "Intsident algas Kuma-IDga: {value}",
+        "Start completed:": "Käivitamine lõpetatud:",
+        "Start completed: {state}": "Algus lõpetatud: {state}",
+        "Resolve completed: {state}": "Lahendamine lõpetatud: {state}",
+        "Settings": "Seadistused",
+        "How many entries per page shall be shown?": "Mitu kirjet ühe lehekülje kohta näidatakse?"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

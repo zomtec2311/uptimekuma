@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Не знайдено записів історії.",
     "The three actions on the job are only intended for manual testing of the messages.": "Три дії на роботу призначені тільки для ручного тестування повідомлень.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Вимкніть ці URL-адреси, як пароль, оскільки токен знаходиться в них. У скрипті токен не повинен бути в загальнодоступних файлах.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Зовнішні скрипти можуть надсилати додаткові X-UptimeKuma-Source header. Це дозволяє визначити виконану баш, PHP скрипт, Python скрипт або інший дзвінок більш точно."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Зовнішні скрипти можуть надсилати додаткові X-UptimeKuma-Source header. Це дозволяє визначити виконану баш, PHP скрипт, Python скрипт або інший дзвінок більш точно.",
+    "Incident started": "Розпочався",
+    "Incident started with Kuma-ID: {value}": "Вступ почався з Kuma-ID: {value}",
+    "Start completed:": "Почати завершено:",
+    "Start completed: {state}": "Start completed: {state}",
+    "Resolve completed: {state}": "Resolve completed: {state}",
+    "Settings": "Налаштування",
+    "How many entries per page shall be shown?": "Скільки записів на сторінку буде показано?"
 },
 "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);");

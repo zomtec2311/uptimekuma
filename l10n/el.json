@@ -190,7 +190,14 @@
         "No history entries found.": "Δεν βρέθηκαν καταχωρήσεις ιστορικού.",
         "The three actions on the job are only intended for manual testing of the messages.": "Οι τρεις δράσεις για την εργασία προορίζονται μόνο για χειροκίνητο έλεγχο των μηνυμάτων.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Αντιμετώπιση αυτών των URLs σαν έναν κωδικό πρόσβασης, επειδή το ενδεικτικό είναι σε αυτά. Στο σενάριο, το ενδεικτικό δεν πρέπει να βρίσκεται σε δημόσια αναγνώσιμα αρχεία.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Τα εξωτερικά σενάρια μπορούν να στείλουν την προαιρετική κεφαλίδα X-UptimeKuma-Source. Αυτό σας επιτρέπει να αναγνωρίσετε ένα εκτελεσμένο bash, σενάριο PHP, σενάριο Python ή άλλο καλούντο με μεγαλύτερη ακρίβεια."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Τα εξωτερικά σενάρια μπορούν να στείλουν την προαιρετική κεφαλίδα X-UptimeKuma-Source. Αυτό σας επιτρέπει να αναγνωρίσετε ένα εκτελεσμένο bash, σενάριο PHP, σενάριο Python ή άλλο καλούντο με μεγαλύτερη ακρίβεια.",
+        "Incident started": "Το περιστατικό ξεκίνησε",
+        "Incident started with Kuma-ID: {value}": "Το περιστατικό ξεκίνησε με το Kuma-ID: {value}",
+        "Start completed:": "Η εκκίνηση ολοκληρώθηκε:",
+        "Start completed: {state}": "Η εκκίνηση ολοκληρώθηκε: {state}",
+        "Resolve completed: {state}": "Η επίλυση ολοκληρώθηκε: {state}",
+        "Settings": "Settings",
+        "How many entries per page shall be shown?": "Πόσες εγγραφές ανά σελίδα πρέπει να εμφανίζονται?"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

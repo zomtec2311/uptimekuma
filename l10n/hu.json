@@ -190,7 +190,14 @@
         "No history entries found.": "Nincs előzmény bejegyzés.",
         "The three actions on the job are only intended for manual testing of the messages.": "A három intézkedés csak az üzenetek kézi tesztelésére szolgál.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Kezelje ezeket az URL-eket jelszóval, mert benne van a jelszó. A forgatókönyvben nem szerepelhet nyilvánosan olvasható fájlokban.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "A külső szkriptek elküldhetik az opcionális X- UptimeKuma- Forrásfejlécet. Ez lehetővé teszi a futtatott bash, PHP script, Python script vagy más hívó pontosabb azonosítását."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "A külső szkriptek elküldhetik az opcionális X- UptimeKuma- Forrásfejlécet. Ez lehetővé teszi a futtatott bash, PHP script, Python script vagy más hívó pontosabb azonosítását.",
+        "Incident started": "Az eset kezdete",
+        "Incident started with Kuma-ID: {value}": "Az eset Kuma- ID segítségével kezdődött: {value}",
+        "Start completed:": "A befejezés kezdete:",
+        "Start completed: {state}": "A befejezés kezdete: {state}",
+        "Resolve completed: {state}": "A megoldás befejeződött: {state}",
+        "Settings": "Beállítások",
+        "How many entries per page shall be shown?": "Hány bejegyzést kell megjeleníteni oldalanként?"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

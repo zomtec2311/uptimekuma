@@ -190,6 +190,13 @@ OC.L10N.register(
     "No history entries found.": "Heç bir tarix tapılmadı.",
     "The three actions on the job are only intended for manual testing of the messages.": "İşdəki üç fəaliyyət yalnız mesajların elmi test üçün təqdim edilir.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Bu URL'leri bir şəkil kimi müəyyən edir, çünki token onlara. scriptdə, token ümumi oxumaq faylları olmamalıdır.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "X-UptimeKuma-Source başlığına daxil olmaq mümkündür. Bu, icra edilmiş bash, PHP script, Python script və ya digər caller daha asan təşkil edir."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "X-UptimeKuma-Source başlığına daxil olmaq mümkündür. Bu, icra edilmiş bash, PHP script, Python script və ya digər caller daha asan təşkil edir.",
+    "Incident started": "Davam başladı",
+    "Incident started with Kuma-ID: {value}": "Bu gün Kuma-ID ilə başladı: {value}",
+    "Start completed:": "Başlamaq:",
+    "Start completed: {state}": "Başlamaq: {state}",
+    "Resolve completed: {state}": "Tamamlandı: {state}",
+    "Settings": "Settings",
+    "How many entries per page shall be shown?": "Bakıda neçə giriş göstərilir?"
 },
 "nplurals=2; plural=n != 1;");

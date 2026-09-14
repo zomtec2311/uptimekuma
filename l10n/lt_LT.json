@@ -189,7 +189,14 @@
         "No history entries found.": "Istorijos įrašų nerasta.",
         "The three actions on the job are only intended for manual testing of the messages.": "Tris su darbu susijusius veiksmus galima atlikti tik rankiniu būdu tikrinant pranešimus.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Gydyti šiuos URL kaip slaptažodį, nes žetonas yra juose. Scenarijuje atpažinties raktas neturėtų būti viešo skaitymo rinkmenose.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "IšorNAME OF TRANSLATORS Čia galima tiksliau nustatyti įvykdytą bash, PHP scenarijų, Python scenarijų ar kitą skambintoją."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "IšorNAME OF TRANSLATORS Čia galima tiksliau nustatyti įvykdytą bash, PHP scenarijų, Python scenarijų ar kitą skambintoją.",
+        "Incident started": "Incidentas prasidėjo",
+        "Incident started with Kuma-ID: {value}": "Incidentas prasidėjo Kuma- ID: {value}",
+        "Start completed:": "Pradžia baigta:",
+        "Start completed: {state}": "Pradžia baigta: {state}",
+        "Resolve completed: {state}": "Šalinimas baigtas: {state}",
+        "Settings": "Nustatymai",
+        "How many entries per page shall be shown?": "(neprivaloma)?"
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);"
 }

@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Nenašli sa žiadne záznamy z histórie.",
     "The three actions on the job are only intended for manual testing of the messages.": "Tri akcie v práci sú určené len na manuálne testovanie správ.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Zaobchádzajte s týmito URL ako s heslom, pretože je v nich žetón. V skripte by token nemal byť vo verejne čitateľných súboroch.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Externé skripty môžu poslať voliteľnú hlavičku X-UptimeKuma-Source. To vám umožní identifikovať popravený bash, PHP skript, Python skript alebo iný volajúci presnejšie."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Externé skripty môžu poslať voliteľnú hlavičku X-UptimeKuma-Source. To vám umožní identifikovať popravený bash, PHP skript, Python skript alebo iný volajúci presnejšie.",
+    "Incident started": "Incident začal",
+    "Incident started with Kuma-ID: {value}": "Incident začal s Kuma-ID: {value}",
+    "Start completed:": "Začiatok dokončený:",
+    "Start completed: {state}": "Začiatok dokončený: {state}",
+    "Resolve completed: {state}": "Resolve dokončená: {state}",
+    "Settings": "Nastavenie",
+    "How many entries per page shall be shown?": "Koľko vstupov na stránku sa zobrazí?"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);");

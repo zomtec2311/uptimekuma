@@ -189,7 +189,14 @@
         "No history entries found.": "ไม่พบรายการประวัติการใช้.",
         "The three actions on the job are only intended for manual testing of the messages.": "การกระทําสามอย่างของงาน ถูกกําหนดให้ทดสอบข้อความด้วยตนเองเท่านั้น.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "ปฏิบัติกับที่อยู่ URL เหล่านี้เหมือนกับใช้รหัสผ่าน เพราะป้ายมันอยู่ในนั้น ในสคริปต์, เหรียญนี้ไม่ควรจะอยู่ในแฟ้มที่อ่านได้.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "สคริปต์ภายนอกสามารถส่งหัวกระดาษ XUptimeKama-Source ได้ นี้จะช่วยให้คุณระบุการประหารชีวิต ban, PHP สคริปต์, Python สคริปต์หรืออื่น ๆ ที่ชัดเจน."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "สคริปต์ภายนอกสามารถส่งหัวกระดาษ XUptimeKama-Source ได้ นี้จะช่วยให้คุณระบุการประหารชีวิต ban, PHP สคริปต์, Python สคริปต์หรืออื่น ๆ ที่ชัดเจน.",
+        "Incident started": "เริ่มทํางาน",
+        "Incident started with Kuma-ID: {value}": "เหตุการณ์ที่ขึ้นต้นด้วย Kumma-ID: {value}",
+        "Start completed:": "การเริ่มเสร็จสมบูรณ์:",
+        "Start completed: {state}": "เริ่มทํางานเสร็จสมบูรณ์: สืบค้นเมื่อ: {state}",
+        "Resolve completed: {state}": "Resolive เสร็จสิ้น: {state}",
+        "Settings": "ตั้งค่า",
+        "How many entries per page shall be shown?": "จะมีกี่รายการต่อหน้า?"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

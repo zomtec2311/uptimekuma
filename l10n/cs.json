@@ -190,7 +190,14 @@
         "No history entries found.": "Nebyly nalezeny žádné záznamy.",
         "The three actions on the job are only intended for manual testing of the messages.": "Tyto tři akce jsou určeny pouze pro ruční testování zpráv.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Zacházejte s těmito URL jako s heslem, protože je v nich symbol. Ve skriptu by token neměl být ve veřejně čitelných souborech.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Externí skripty mohou odeslat volitelnou hlavičku X-UptimeKuma-Source. To vám umožní přesněji určit provedený bash, PHP skript, Python skript nebo jiný volající."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Externí skripty mohou odeslat volitelnou hlavičku X-UptimeKuma-Source. To vám umožní přesněji určit provedený bash, PHP skript, Python skript nebo jiný volající.",
+        "Incident started": "Incident zahájen",
+        "Incident started with Kuma-ID: {value}": "Incident začal s Kuma- ID: {value}",
+        "Start completed:": "Start dokončen:",
+        "Start completed: {state}": "Zahájení dokončeno: {state}",
+        "Resolve completed: {state}": "Vyřešení dokončeno: {state}",
+        "Settings": "Nastavení",
+        "How many entries per page shall be shown?": "Kolik záznamů na stránku se zobrazí?"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);"
 }

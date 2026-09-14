@@ -190,7 +190,14 @@
         "No history entries found.": "Non se atoparon entradas de historia.",
         "The three actions on the job are only intended for manual testing of the messages.": "As tres accións do traballo están destinadas só á proba manual das mensaxes.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Trata estes URLs como un contrasinal porque o token está neles. No script, o token non debe estar en ficheiros lexibles publicamente.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Os scripts externos poden enviar o encabezado opcional X-UptimeKuma-Source. Isto permite identificar máis precisamente un Bash, PHP, Python ou outro caller."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Os scripts externos poden enviar o encabezado opcional X-UptimeKuma-Source. Isto permite identificar máis precisamente un Bash, PHP, Python ou outro caller.",
+        "Incident started": "O incidente comezou",
+        "Incident started with Kuma-ID: {value}": "Inicio > Kuma-ID: {value}",
+        "Start completed:": "Inicio completado:",
+        "Start completed: {state}": "Inicio : {state}",
+        "Resolve completed: {state}": "Solución: : {state}",
+        "Settings": "Configuración",
+        "How many entries per page shall be shown?": "Cantas entradas por páxina se mostrarán?"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

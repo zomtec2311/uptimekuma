@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "לא נמצאו רישומים היסטוריים.",
     "The three actions on the job are only intended for manual testing of the messages.": "שלושת הפעולות על העבודה נועדו רק לבדיקה ידנית של ההודעות.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "התייחס ל-URL האלה כמו סיסמה, כי האסימון נמצא בהם. בתסריט, הסימון לא צריך להיות בקבצים שניתן לקרוא בפומבי.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "תסריטים חיצוניים יכולים לשלוח את מנהל X-UptimeKuma-Source זה מאפשר לך לזהות bash שהוצא להורג, PHP תסריט, פייתון או קורא אחר ליתר דיוק."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "תסריטים חיצוניים יכולים לשלוח את מנהל X-UptimeKuma-Source זה מאפשר לך לזהות bash שהוצא להורג, PHP תסריט, פייתון או קורא אחר ליתר דיוק.",
+    "Incident started": "התקרית החלה",
+    "Incident started with Kuma-ID: {value}": "שם הסרטון: Kuma-ID: {value}",
+    "Start completed:": "התחל הושלם:",
+    "Start completed: {state}": "התחל להשלים: {state}",
+    "Resolve completed: {state}": "המונחים: {state}",
+    "Settings": "הגדרות",
+    "How many entries per page shall be shown?": "כמה ערכים בעמוד יופיעו?"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);");

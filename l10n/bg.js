@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Не са открити записи от историята.",
     "The three actions on the job are only intended for manual testing of the messages.": "Трите действия на работното място са предназначени само за ръчно тестване на съобщенията.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Отнасяйте се с тези URL адреси като с парола, защото символът е в тях. В сценария, символът не трябва да бъде в публично четени файлове.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Външните скриптове могат да изпратят опцията X-UptimeKuma-Source заглавна част. Това ви позволява да идентифицирате екзекутиран баш, PHP скрипт, Python скрипт или друг слушател по-точно."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Външните скриптове могат да изпратят опцията X-UptimeKuma-Source заглавна част. Това ви позволява да идентифицирате екзекутиран баш, PHP скрипт, Python скрипт или друг слушател по-точно.",
+    "Incident started": "Започна инцидент",
+    "Incident started with Kuma-ID: {value}": "Инцидент започна с Kuma-ID: {value}",
+    "Start completed:": "Началото завършено:",
+    "Start completed: {state}": "Началото завършено: {state}",
+    "Resolve completed: {state}": "Resolve завършена: {state}",
+    "Settings": "Настройки",
+    "How many entries per page shall be shown?": "Колко записа на страница се показват?"
 },
 "nplurals=2; plural=n != 1;");

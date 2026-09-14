@@ -190,7 +190,14 @@
         "No history entries found.": "履歴エントリが見つかりません.",
         "The three actions on the job are only intended for manual testing of the messages.": "ジョブの3つのアクションは、メッセージの手動テストのみを目的としています.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "トークンがそれらにあるため、パスワードのようなURLを処理します。 スクリプトでは、トークンは一般に読みやすいファイルにはならない.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "外部スクリプトは、オプションのX-UptimeKuma-Sourceヘッダーを送信できます。 これにより、実行された bash、PHP スクリプト、Python スクリプト、その他の発信者をより正確に識別できます."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "外部スクリプトは、オプションのX-UptimeKuma-Sourceヘッダーを送信できます。 これにより、実行された bash、PHP スクリプト、Python スクリプト、その他の発信者をより正確に識別できます.",
+        "Incident started": "代表取締役",
+        "Incident started with Kuma-ID: {value}": "クマID: {value} を発足",
+        "Start completed:": "完了し始めて下さい:",
+        "Start completed: {state}": "スタート完了: {state}",
+        "Resolve completed: {state}": "解決完了: {state}",
+        "Settings": "コンテンツ",
+        "How many entries per page shall be shown?": "1ページあたりのエントリ数がいくつ表示されますか?"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

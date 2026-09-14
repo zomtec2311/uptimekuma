@@ -190,7 +190,14 @@
         "No history entries found.": "Никаких записей истории не найдено.",
         "The three actions on the job are only intended for manual testing of the messages.": "Три действия на работе предназначены только для ручного тестирования сообщений.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Относитесь к этим URL-адресам как к паролю, потому что в них находится токен. В сценарии токен не должен быть в общедоступных файлах.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Внешние скрипты могут отправлять дополнительный заголовок X-UptimeKuma-Source. Это позволяет более точно идентифицировать исполняемый bash, скрипт PHP, скрипт Python или другой абонент."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Внешние скрипты могут отправлять дополнительный заголовок X-UptimeKuma-Source. Это позволяет более точно идентифицировать исполняемый bash, скрипт PHP, скрипт Python или другой абонент.",
+        "Incident started": "Инцидент начался",
+        "Incident started with Kuma-ID: {value}": "Инцидент начался с Kuma-ID: {value}",
+        "Start completed:": "Начало завершено:",
+        "Start completed: {state}": "Начало завершено: {state}",
+        "Resolve completed: {state}": "Решение выполнено: {state}",
+        "Settings": "Настройки",
+        "How many entries per page shall be shown?": "Сколько записей на странице должно быть показано?"
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

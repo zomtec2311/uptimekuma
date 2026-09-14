@@ -190,7 +190,14 @@
         "No history entries found.": "Tidak ditemukan catatan sejarah.",
         "The three actions on the job are only intended for manual testing of the messages.": "Ketiga tindakan pada pekerjaan hanya dimaksudkan untuk pengujian manual pesan.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Perlakukan URL ini seperti kata sandi karena token di dalamnya. Dalam skrip, token seharusnya tidak berada dalam berkas yang mudah dibaca.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Skrip eksternal dapat mengirim pilihan X- UptimeKuma -Source header. Hal ini memungkinkan Anda mengidentifikasi bash dieksekusi, PHP script, Python script atau penelepon lain lebih tepatnya."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Skrip eksternal dapat mengirim pilihan X- UptimeKuma -Source header. Hal ini memungkinkan Anda mengidentifikasi bash dieksekusi, PHP script, Python script atau penelepon lain lebih tepatnya.",
+        "Incident started": "Insiden dimulai",
+        "Incident started with Kuma-ID: {value}": "Insiden dimulai dengan Kuma- ID: {value}",
+        "Start completed:": "Mulai selesai:",
+        "Start completed: {state}": "Mulai selesai: {state}",
+        "Resolve completed: {state}": "Resolve selesai: {state}",
+        "Settings": "Pengaturan",
+        "How many entries per page shall be shown?": "Berapa banyak entri per halaman yang akan ditampilkan?"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

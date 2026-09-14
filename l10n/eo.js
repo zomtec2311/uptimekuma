@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "Neniuj historiaj kontribuoj trovitaj.",
     "The three actions on the job are only intended for manual testing of the messages.": "La tri agoj sur la tasko estas nur destinitaj por mantestado de la mesaĝoj.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Traktu tiujn URLojn kiel pasvorton ĉar la ĵetono estas en ili. En la manuskripto, la ĵetono ne devus esti en publike legeblaj dosieroj.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Eksteraj manuskriptoj povas sendi la laŭvolan X-UptimeKuma-Source-kapon. Tio lasas vin identigi efektivigitan bash, PHP manuskripton, Python-manuskripton aŭ alian alvokanton pli ĝuste."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Eksteraj manuskriptoj povas sendi la laŭvolan X-UptimeKuma-Source-kapon. Tio lasas vin identigi efektivigitan bash, PHP manuskripton, Python-manuskripton aŭ alian alvokanton pli ĝuste.",
+    "Incident started": "Okazaĵo komenciĝis",
+    "Incident started with Kuma-ID: {value}": "Okazaĵo komenciĝis kun Kuma-ID: {value}",
+    "Start completed:": "Komencu:",
+    "Start completed: {state}": "Komencu: {state}",
+    "Resolve completed: {state}": "Solvo: {state}",
+    "Settings": "Settings",
+    "How many entries per page shall be shown?": "Kiom da kontribuoj per la paĝo estos montritaj?"
 },
 "nplurals=2; plural=n != 1;");

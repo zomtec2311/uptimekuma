@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "역사 항목이 없습니다.",
     "The three actions on the job are only intended for manual testing of the messages.": "작업의 세 가지 작업은 메시지의 수동 테스트에만 사용됩니다.",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "토큰이 그 안에 있기 때문에 암호와 같은 URL을 취급합니다. 스크립트에서, 토큰은 공개적으로 읽기 쉬운 파일에 있어야합니다.",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "외부 스크립트는 옵션 X-UptimeKuma-Source 헤더를 보낼 수 있습니다. 실행된 bash, PHP 스크립트, Python 스크립트 또는 다른 콜러를 정확하게 식별할 수 있습니다."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "외부 스크립트는 옵션 X-UptimeKuma-Source 헤더를 보낼 수 있습니다. 실행된 bash, PHP 스크립트, Python 스크립트 또는 다른 콜러를 정확하게 식별할 수 있습니다.",
+    "Incident started": "Incident 시작",
+    "Incident started with Kuma-ID: {value}": "Kuma-ID: {value}로 시작",
+    "Start completed:": "완료된 시작:",
+    "Start completed: {state}": "완료된 시작: {state}",
+    "Resolve completed: {state}": "해결 완료: {state}",
+    "Settings": "지원하다",
+    "How many entries per page shall be shown?": "페이지 당 많은 항목이 표시됩니까?"
 },
 "nplurals=1; plural=0;");

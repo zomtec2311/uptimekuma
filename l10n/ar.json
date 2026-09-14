@@ -189,7 +189,12 @@
         "No history entries found.": "لا يوجد أي قيود تاريخية.",
         "The three actions on the job are only intended for manual testing of the messages.": "والإجراءات الثلاثة المتعلقة بالعمل لا تستهدف سوى إجراء اختبارات يدوية للرسائل.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "عالج هذه الـ (يور إل) ككلمة سر لأن (توكن) بداخلها In the script, the token should not be in publicly readable files.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "ويمكن للمحاضر الخارجية أن تبعث برئيس اكس أوبتيم كوما-سورس الاختياري. هذا يجعلك تتعرفين على الـ (باش) المُعدّم، نص شرطة (فيثون)، نصّ (بايتون) أو مُتصل آخر أكثر دقة."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "ويمكن للمحاضر الخارجية أن تبعث برئيس اكس أوبتيم كوما-سورس الاختياري. هذا يجعلك تتعرفين على الـ (باش) المُعدّم، نص شرطة (فيثون)، نصّ (بايتون) أو مُتصل آخر أكثر دقة.",
+        "Incident started": "بدأت الحادثة",
+        "Incident started with Kuma-ID: {value}": "Incident started with Kuma-ID: {value}",
+        "Start completed:": "اكتملت البداية:",
+        "Settings": "الترتيبات",
+        "How many entries per page shall be shown?": "كم عدد القيدات في كل صفحة؟?"
     },
     "pluralForm": "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));"
 }

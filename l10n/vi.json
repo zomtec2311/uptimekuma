@@ -190,7 +190,14 @@
         "No history entries found.": "Không tìm thấy mục nhập lịch sử.",
         "The three actions on the job are only intended for manual testing of the messages.": "Ba hành động trong công việc chỉ nhằm kiểm tra bằng tay các tin nhắn.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Xử lý những địa chỉ URL này như một mật khẩu vì nó có hiệu lực trong đó. Trong kịch bản, biểu tượng không nên nằm trong tập tin có khả năng đọc trước công chúng.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "Tập lệnh bên ngoài có thể gửi đầu trang X-UptimeKuma-Source tùy chọn. Điều này cho bạn khả năng nhận diện một cú đập đã bị hành quyết, kịch bản PHP, văn lệnh Python hoặc các cuộc gọi khác chính xác hơn."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Tập lệnh bên ngoài có thể gửi đầu trang X-UptimeKuma-Source tùy chọn. Điều này cho bạn khả năng nhận diện một cú đập đã bị hành quyết, kịch bản PHP, văn lệnh Python hoặc các cuộc gọi khác chính xác hơn.",
+        "Incident started": "Incident started",
+        "Incident started with Kuma-ID: {value}": "Incident started with Kuma-ID: {value}",
+        "Start completed:": "Chạy xong:",
+        "Start completed: {state}": "Start completed: {state}",
+        "Resolve completed: {state}": "Resolve completed: {state}",
+        "Settings": "Thiết lập",
+        "How many entries per page shall be shown?": "Mỗi trang sẽ hiển thị bao nhiêu mục?"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

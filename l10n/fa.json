@@ -190,7 +190,14 @@
         "No history entries found.": "هیچ نوشته تاریخی پیدا نشد.",
         "The three actions on the job are only intended for manual testing of the messages.": "سه اقدام در این کار تنها برای آزمایش دستی پیام ها در نظر گرفته شده است.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "با این URL ها مانند یک رمز عبور رفتار کنید زیرا توکن در آن ها قرار دارد. در اسکریپت، توکن نباید در فایل های قابل خواندن عمومی باشد.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "اسکریپت های خارجی می توانند هدر اختیاری X-UptimeKuma-Source را ارسال کنند. این به شما اجازه می دهد تا یک Bash اجرا شده، اسکریپت PHP، اسکریپت پایتون یا دیگر تماس گیرنده ها را دقیق تر شناسایی کنید."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "اسکریپت های خارجی می توانند هدر اختیاری X-UptimeKuma-Source را ارسال کنند. این به شما اجازه می دهد تا یک Bash اجرا شده، اسکریپت PHP، اسکریپت پایتون یا دیگر تماس گیرنده ها را دقیق تر شناسایی کنید.",
+        "Incident started": "حادثه آغاز شد",
+        "Incident started with Kuma-ID: {value}": "حادثه با Kuma-ID آغاز شد: {value}",
+        "Start completed:": "شروع تکمیل:",
+        "Start completed: {state}": "شروع به تکمیل: {state}",
+        "Resolve completed: {state}": "حل کامل: {state}",
+        "Settings": "تنظیمات",
+        "How many entries per page shall be shown?": "چند ورودی در هر صفحه نمایش داده خواهد شد؟?"
     },
     "pluralForm": "nplurals=2; plural=n > 1;"
 }

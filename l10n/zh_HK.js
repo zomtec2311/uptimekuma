@@ -191,6 +191,13 @@ OC.L10N.register(
     "No history entries found.": "未找到歷史記錄條目。",
     "The three actions on the job are only intended for manual testing of the messages.": "工作中的三個動作僅用於手動測試訊息。",
     "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "將這些URL視為密碼，因為其中包含權杖。在腳本中，權杖不應在公開可讀的檔案中。",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "外部腳本可以發送可選的X-UptimeKuma-Source標題。這可讓您更準確地識別已執行的bash、PHP腳本、Python腳本或其他呼叫者。"
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "外部腳本可以發送可選的X-UptimeKuma-Source標題。這可讓您更準確地識別已執行的bash、PHP腳本、Python腳本或其他呼叫者。",
+    "Incident started": "事故已開始",
+    "Incident started with Kuma-ID: {value}": "事件始於Kuma-ID ： {value}",
+    "Start completed:": "開始已完成：",
+    "Start completed: {state}": "開始完成： {state}",
+    "Resolve completed: {state}": "解析完成： {state}",
+    "Settings": "設定",
+    "How many entries per page shall be shown?": "每頁應顯示多少條目？"
 },
 "nplurals=1; plural=0;");

@@ -190,7 +190,14 @@
         "No history entries found.": "未找到历史条目 .",
         "The three actions on the job are only intended for manual testing of the messages.": "工作中的这三项动作只是为了手动测试消息.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "将这些 URL 当作密码处理, 因为 符号在它们里面 。 在剧本中,代币不应被公开读取.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "外部脚本可以发送可选的X-Uptime-Kuma-Source头. 这样您就可以更准确地识别已执行的击打、 PHP 脚本、 Python 脚本或其他调用者 ."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "外部脚本可以发送可选的X-Uptime-Kuma-Source头. 这样您就可以更准确地识别已执行的击打、 PHP 脚本、 Python 脚本或其他调用者 .",
+        "Incident started": "事件发生",
+        "Incident started with Kuma-ID: {value}": "Incident started with Kuma-ID: {value}",
+        "Start completed:": "开始完成 :",
+        "Start completed: {state}": "Start completed: {state}",
+        "Resolve completed: {state}": "Resolve completed: {state}",
+        "Settings": "设置",
+        "How many entries per page shall be shown?": "每页要显示多少项?"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

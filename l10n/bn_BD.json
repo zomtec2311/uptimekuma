@@ -188,7 +188,13 @@
         "No history entries found.": "কোন পূর্ববর্তী তথ্য পাওয়া যায় নি।.",
         "The three actions on the job are only intended for manual testing of the messages.": "কাজের তিনটি কাজ শুধু বার্তাটি পরীক্ষা করে দেখা।.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "এই ইউ- আর- এল একটি পাসওয়ার্ড হিসাবে দেখ কারন টোকেনটি তাদের কাছে আছে । স্ক্রিপ্টে, টোকেনটি সার্বজনীন ভাবে পড়া যাবে না।.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.": "বহিস্থিত স্ক্রিপ্ট দ্বারা ঐচ্ছিক X-টু-প্রজেক্ট হেডার প্রেরণ করা যাবে। এই বিকল্পের সাহায্যে আপনি SHP স্ক্রিপ্ট, Python স্ক্রিপ্ট অথবা অন্যান্য কোনো সুনির্দিষ্টভাবে সনাক্ত করতে পারবেন ।."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "বহিস্থিত স্ক্রিপ্ট দ্বারা ঐচ্ছিক X-টু-প্রজেক্ট হেডার প্রেরণ করা যাবে। এই বিকল্পের সাহায্যে আপনি SHP স্ক্রিপ্ট, Python স্ক্রিপ্ট অথবা অন্যান্য কোনো সুনির্দিষ্টভাবে সনাক্ত করতে পারবেন ।.",
+        "Incident started": "ইঙ্ক আরম্ভ করতে ব্যর্থ",
+        "Incident started with Kuma-ID: {value}": "Kaara-id-র সাথে সঞ্চালন আরম্ভ করা হয়েছে: {value}",
+        "Start completed:": "আরম্ভ করা হবে:",
+        "Start completed: {state}": "আরম্ভ করা হবে: {state}",
+        "Settings": "বৈশিষ্ট্য",
+        "How many entries per page shall be shown?": "প্রতি পৃষ্ঠায় কতগুলো এন্ট্রি দেখানো হবে?"
     },
     "pluralForm": "nplurals=2; plural=n > 1;"
 }
