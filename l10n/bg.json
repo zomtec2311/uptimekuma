@@ -197,7 +197,12 @@
         "Start completed: {state}": "Началото завършено: {state}",
         "Resolve completed: {state}": "Resolve завършена: {state}",
         "Settings": "Настройки",
-        "How many entries per page shall be shown?": "Колко записа на страница се показват?"
+        "How many entries per page shall be shown?": "Колко записа на страница се показват?",
+        "UptimeKuma settings": "Настройки на uptimeKuma",
+        "UptimeKuma on GitHub": "UptimeKuma on GitHub",
+        "Report an Issue": "Докладвайте за проблем",
+        "UptimeKuma in the Appstore": "UptimeKuma в магазина",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ако харесвате {name}   годинки и/или коментар за {name} в {where}"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

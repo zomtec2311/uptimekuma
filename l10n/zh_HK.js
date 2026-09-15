@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "開始完成： {state}",
     "Resolve completed: {state}": "解析完成： {state}",
     "Settings": "設定",
-    "How many entries per page shall be shown?": "每頁應顯示多少條目？"
+    "How many entries per page shall be shown?": "每頁應顯示多少條目？",
+    "UptimeKuma settings": "UptimeKuma設定",
+    "UptimeKuma on GitHub": "GitHub上的UptimeKuma",
+    "Report an Issue": "回報問題",
+    "UptimeKuma in the Appstore": "Appstore中的UptimeKuma",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "如果您喜歡{name}⭐率和/或在{where}中對{name}發💬表評論"
 },
 "nplurals=1; plural=0;");

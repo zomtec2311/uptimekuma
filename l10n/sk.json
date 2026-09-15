@@ -197,7 +197,12 @@
         "Start completed: {state}": "Začiatok dokončený: {state}",
         "Resolve completed: {state}": "Resolve dokončená: {state}",
         "Settings": "Nastavenie",
-        "How many entries per page shall be shown?": "Koľko vstupov na stránku sa zobrazí?"
+        "How many entries per page shall be shown?": "Koľko vstupov na stránku sa zobrazí?",
+        "UptimeKuma settings": "Nastavenie UptimeKuma",
+        "UptimeKuma on GitHub": "UptimeKuma na GitHube",
+        "Report an Issue": "Správa o spornej otázke",
+        "UptimeKuma in the Appstore": "UptimeKuma v Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ak sa vám páči {name} {where}"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);"
 }

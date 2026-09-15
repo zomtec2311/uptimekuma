@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "شروع به تکمیل: {state}",
     "Resolve completed: {state}": "حل کامل: {state}",
     "Settings": "تنظیمات",
-    "How many entries per page shall be shown?": "چند ورودی در هر صفحه نمایش داده خواهد شد؟?"
+    "How many entries per page shall be shown?": "چند ورودی در هر صفحه نمایش داده خواهد شد؟?",
+    "UptimeKuma settings": "تنظیمات UptimeKuma",
+    "UptimeKuma on GitHub": "UptimeKuma در GitHub",
+    "Report an Issue": "گزارش یک مسئله",
+    "UptimeKuma in the Appstore": "UptimeKuma در Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "اگر شما از {name} ⭐ نرخ و / یا 💬 نظر در مورد {name} در {where}"
 },
 "nplurals=2; plural=n > 1;");

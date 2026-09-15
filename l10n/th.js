@@ -197,6 +197,11 @@ OC.L10N.register(
     "Start completed: {state}": "เริ่มทํางานเสร็จสมบูรณ์: สืบค้นเมื่อ: {state}",
     "Resolve completed: {state}": "Resolive เสร็จสิ้น: {state}",
     "Settings": "ตั้งค่า",
-    "How many entries per page shall be shown?": "จะมีกี่รายการต่อหน้า?"
+    "How many entries per page shall be shown?": "จะมีกี่รายการต่อหน้า?",
+    "UptimeKuma settings": "ตั้งค่าการเร่งความเร็ว",
+    "UptimeKuma on GitHub": "Uptimekama on Github",
+    "Report an Issue": "รายงาน ประเด็น",
+    "UptimeKuma in the Appstore": "การ ปรับ ตัว ให้ เหมาะ กับ เวลา",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ถ้าคุณชอบ {name} ⭐ อัตราและ/หรือ 💬 หมายเหตุเกี่ยวกับ {name} ใน {where}"
 },
 "nplurals=1; plural=0;");

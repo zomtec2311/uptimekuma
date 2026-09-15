@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Hasiera osatuta: :",
     "Resolve completed: {state}": "Ebatzita: :",
     "Settings": "Ezarpenak",
-    "How many entries per page shall be shown?": "Zenbat sarrera erakutsiko dira orrialdeko?"
+    "How many entries per page shall be shown?": "Zenbat sarrera erakutsiko dira orrialdeko?",
+    "UptimeKuma settings": "UptimeKuma ezarpenak",
+    "UptimeKuma on GitHub": "UptimeKuma GitHub-en",
+    "Report an Issue": "Bidali arazo bat",
+    "UptimeKuma in the Appstore": "UptimeKuma Appstorean",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
 },
 "nplurals=2; plural=n != 1;");

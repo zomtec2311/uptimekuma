@@ -194,7 +194,12 @@
         "Incident started with Kuma-ID: {value}": "Incident started with Kuma-ID: {value}",
         "Start completed:": "اكتملت البداية:",
         "Settings": "الترتيبات",
-        "How many entries per page shall be shown?": "كم عدد القيدات في كل صفحة؟?"
+        "How many entries per page shall be shown?": "كم عدد القيدات في كل صفحة؟?",
+        "UptimeKuma settings": "في الوقت المناسب",
+        "UptimeKuma on GitHub": "(في (جيت هوب",
+        "Report an Issue": "Report an Issue",
+        "UptimeKuma in the Appstore": "(في (آبستوير",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "إذا كنت تحب معدل {name} و/أو تعليق على {name} في {where}"
     },
     "pluralForm": "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));"
 }

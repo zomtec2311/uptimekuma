@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Start fullført: {state}",
     "Resolve completed: {state}": "Løsning fullført: {state}",
     "Settings": "Innstillinger",
-    "How many entries per page shall be shown?": "Hvor mange poster per side skal vises?"
+    "How many entries per page shall be shown?": "Hvor mange poster per side skal vises?",
+    "UptimeKuma settings": "UptimeKuma innstillinger",
+    "UptimeKuma on GitHub": "OpptidKuma på GitHub",
+    "Report an Issue": "Rapporter et problem",
+    "UptimeKuma in the Appstore": "UptimeKuma i Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "hvis du liker {name} ⭐ rate og/eller 💬 kommentar på {name} i {where}"
 },
 "nplurals=2; plural=n != 1;");

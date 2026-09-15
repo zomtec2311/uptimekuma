@@ -195,6 +195,11 @@ OC.L10N.register(
     "Start completed:": "আরম্ভ করা হবে:",
     "Start completed: {state}": "আরম্ভ করা হবে: {state}",
     "Settings": "বৈশিষ্ট্য",
-    "How many entries per page shall be shown?": "প্রতি পৃষ্ঠায় কতগুলো এন্ট্রি দেখানো হবে?"
+    "How many entries per page shall be shown?": "প্রতি পৃষ্ঠায় কতগুলো এন্ট্রি দেখানো হবে?",
+    "UptimeKuma settings": "উপরে- ডানদিকে",
+    "UptimeKuma on GitHub": "জিওহাবে আপটাইমকুমা",
+    "Report an Issue": "একটি ইস্যু প্রতিবেদন",
+    "UptimeKuma in the Appstore": "আ্যপার্টমেন্টে আপটাইমকুমা",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN-র হার এবং/অথবা {name}- র মধ্যে {name}- র উপর মন্তব্য করুন {where}"
 },
 "nplurals=2; plural=n > 1;");

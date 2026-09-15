@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "התחל להשלים: {state}",
     "Resolve completed: {state}": "המונחים: {state}",
     "Settings": "הגדרות",
-    "How many entries per page shall be shown?": "כמה ערכים בעמוד יופיעו?"
+    "How many entries per page shall be shown?": "כמה ערכים בעמוד יופיעו?",
+    "UptimeKuma settings": "הגדרות UptimeKuma",
+    "UptimeKuma on GitHub": "בסביבה הקרובה של GitHub",
+    "Report an Issue": "דיווח על בעיה",
+    "UptimeKuma in the Appstore": "UptimeKuma בחנות",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "אם אתה אוהב {name} ⭐ rate ו / או 💬 תגובה על {name} ב {where}"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);");

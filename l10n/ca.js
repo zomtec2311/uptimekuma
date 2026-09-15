@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Iniciat completada: {state}",
     "Resolve completed: {state}": "Resolu les finalitzades: {state}",
     "Settings": "Arranjament",
-    "How many entries per page shall be shown?": "Quantes entrades es mostraran per pàgina?"
+    "How many entries per page shall be shown?": "Quantes entrades es mostraran per pàgina?",
+    "UptimeKuma settings": "Arranjament de l' hora alKuma",
+    "UptimeKuma on GitHub": "L'hora deKuma al GitHub",
+    "Report an Issue": "Informe d' un llançament",
+    "UptimeKuma in the Appstore": "TimeKuma al magatzem de l'aplicació",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "si us agrada la taxa {name} bisch i/o comment a {name} en la {where}"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);");

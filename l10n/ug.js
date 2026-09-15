@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Start completed: {state}",
     "Resolve completed: {state}": "Resolve completed: {state}",
     "Settings": "Settings",
-    "How many entries per page shall be shown?": "How many entries per page shall be shown?"
+    "How many entries per page shall be shown?": "How many entries per page shall be shown?",
+    "UptimeKuma settings": "UptimeKuma settings",
+    "UptimeKuma on GitHub": "UptimeKuma on GitHub",
+    "Report an Issue": "Report an Issue",
+    "UptimeKuma in the Appstore": "UptimeKuma in the Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
 },
 "nplurals=2; plural=n != 1;");

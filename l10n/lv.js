@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Sākums pabeigts: {state}",
     "Resolve completed: {state}": "Pabeigts: {state}",
     "Settings": "Iestatījumi",
-    "How many entries per page shall be shown?": "Cik ierakstus lapā uzrāda?"
+    "How many entries per page shall be shown?": "Cik ierakstus lapā uzrāda?",
+    "UptimeKuma settings": "UptimeKuma iestatījumi",
+    "UptimeKuma on GitHub": "UptimeKuma uz GitHub",
+    "Report an Issue": "Ziņot par kādu jautājumu",
+    "UptimeKuma in the Appstore": "UptimeKuma Apstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ja jums patīk {name} "
 },
 "nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);");

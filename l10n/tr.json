@@ -197,7 +197,12 @@
         "Start completed: {state}": "Tamamlandı: {state}",
         "Resolve completed: {state}": "Tamamlandı: {state}",
         "Settings": "Ayarlar",
-        "How many entries per page shall be shown?": "Sayfa başına kaç giriş gösteriliyor?"
+        "How many entries per page shall be shown?": "Sayfa başına kaç giriş gösteriliyor?",
+        "UptimeKuma settings": "UptimeKuma ayarları",
+        "UptimeKuma on GitHub": "UptimeKuma at GitHub",
+        "Report an Issue": "Rapor an Issue",
+        "UptimeKuma in the Appstore": "UptimeKuma in the Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

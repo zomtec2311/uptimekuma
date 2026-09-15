@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Start afsluttet: {state}",
     "Resolve completed: {state}": "Færdiggørelse: {state}",
     "Settings": "Indstillinger",
-    "How many entries per page shall be shown?": "Hvor mange indgange pr. side skal vises?"
+    "How many entries per page shall be shown?": "Hvor mange indgange pr. side skal vises?",
+    "UptimeKuma settings": "Opsætning af UptimeKuma",
+    "UptimeKuma on GitHub": "UptimeKuma på GitHub",
+    "Report an Issue": "Meld en sag",
+    "UptimeKuma in the Appstore": "UptimeKuma i Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "hvis du kan lide {name} Memorate og / eller Memory kommentar til {name} i {where}"
 },
 "nplurals=2; plural=n != 1;");

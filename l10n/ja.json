@@ -197,7 +197,12 @@
         "Start completed: {state}": "スタート完了: {state}",
         "Resolve completed: {state}": "解決完了: {state}",
         "Settings": "コンテンツ",
-        "How many entries per page shall be shown?": "1ページあたりのエントリ数がいくつ表示されますか?"
+        "How many entries per page shall be shown?": "1ページあたりのエントリ数がいくつ表示されますか?",
+        "UptimeKuma settings": "UptimeKumaの設定",
+        "UptimeKuma on GitHub": "GitHubで稼働時間Kuma",
+        "Report an Issue": "課題報告",
+        "UptimeKuma in the Appstore": "アップタイムApp Storeでクマ",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

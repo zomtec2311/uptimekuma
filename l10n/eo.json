@@ -197,7 +197,12 @@
         "Start completed: {state}": "Komencu: {state}",
         "Resolve completed: {state}": "Solvo: {state}",
         "Settings": "Settings",
-        "How many entries per page shall be shown?": "Kiom da kontribuoj per la paĝo estos montritaj?"
+        "How many entries per page shall be shown?": "Kiom da kontribuoj per la paĝo estos montritaj?",
+        "UptimeKuma settings": "Antaŭaj valoroj",
+        "UptimeKuma on GitHub": "Antaŭite fare de GitHub",
+        "Report an Issue": "Raporto de afero",
+        "UptimeKuma in the Appstore": "Antaŭite fare de la Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "se vi ŝatas {name} ⭐ indicon kaj/aŭ 💬 komenton sur {name} en la {where}"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

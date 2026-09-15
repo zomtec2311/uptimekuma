@@ -197,7 +197,12 @@
         "Start completed: {state}": "Algus lõpetatud: {state}",
         "Resolve completed: {state}": "Lahendamine lõpetatud: {state}",
         "Settings": "Seadistused",
-        "How many entries per page shall be shown?": "Mitu kirjet ühe lehekülje kohta näidatakse?"
+        "How many entries per page shall be shown?": "Mitu kirjet ühe lehekülje kohta näidatakse?",
+        "UptimeKuma settings": "UptimeKuma seadistused",
+        "UptimeKuma on GitHub": "Uptime Kuma GitHubis",
+        "Report an Issue": "Teata probleemist",
+        "UptimeKuma in the Appstore": "Uptime Kuma Appstore'is",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "kui teile meeldib {name} ☐ määr ja / või 💬 kommenteerige {name}i {where}-s"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

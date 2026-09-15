@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Alku valmis: {state}",
     "Resolve completed: {state}": "Ratkaisu valmis: {state}",
     "Settings": "Asetukset",
-    "How many entries per page shall be shown?": "Kuinka monta kohtaa sivulla näytetään?"
+    "How many entries per page shall be shown?": "Kuinka monta kohtaa sivulla näytetään?",
+    "UptimeKuma settings": "UptimeKuma-asetukset",
+    "UptimeKuma on GitHub": "UptimeKuma on GitHub",
+    "Report an Issue": "Ilmoita numero",
+    "UptimeKuma in the Appstore": "UptimeKuma in the Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jos pidät {name} korko ja/tai kommentti {name} {where}"
 },
 "nplurals=2; plural=n != 1;");

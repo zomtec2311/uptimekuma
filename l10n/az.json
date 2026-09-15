@@ -196,7 +196,12 @@
         "Start completed: {state}": "Başlamaq: {state}",
         "Resolve completed: {state}": "Tamamlandı: {state}",
         "Settings": "Settings",
-        "How many entries per page shall be shown?": "Bakıda neçə giriş göstərilir?"
+        "How many entries per page shall be shown?": "Bakıda neçə giriş göstərilir?",
+        "UptimeKuma settings": "UptimeKuma ayarları",
+        "UptimeKuma on GitHub": "GitHub-da UptimeKuma",
+        "Report an Issue": "Hesabat",
+        "UptimeKuma in the Appstore": "Appstore UptimeKuma",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN ⭐ faizi və / ya 💬 {where} {name}-də {name}-da 💬"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

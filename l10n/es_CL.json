@@ -197,7 +197,12 @@
         "Start completed: {state}": "Inicio completado: {state}",
         "Resolve completed: {state}": "Resolve completed: {state}",
         "Settings": "Ajustes",
-        "How many entries per page shall be shown?": "¿Cuántas entradas por página se mostrarán?"
+        "How many entries per page shall be shown?": "¿Cuántas entradas por página se mostrarán?",
+        "UptimeKuma settings": "Ajustes de UptimeKuma",
+        "UptimeKuma on GitHub": "UptimeKuma en GitHub",
+        "Report an Issue": "Reportar un problema",
+        "UptimeKuma in the Appstore": "UptimeKuma en la Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "si te gusta {name} ⭐ tasa y/o 💬 comentario en {name} en el {where}"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);"
 }

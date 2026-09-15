@@ -197,7 +197,12 @@
         "Start completed: {state}": "완료된 시작: {state}",
         "Resolve completed: {state}": "해결 완료: {state}",
         "Settings": "지원하다",
-        "How many entries per page shall be shown?": "페이지 당 많은 항목이 표시됩니까?"
+        "How many entries per page shall be shown?": "페이지 당 많은 항목이 표시됩니까?",
+        "UptimeKuma settings": "UptimeKuma 설정",
+        "UptimeKuma on GitHub": "GitHub의 UptimeKuma",
+        "Report an Issue": "자주 묻는 질문",
+        "UptimeKuma in the Appstore": "Appstore에서 UptimeKuma",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

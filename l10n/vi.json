@@ -197,7 +197,12 @@
         "Start completed: {state}": "Start completed: {state}",
         "Resolve completed: {state}": "Resolve completed: {state}",
         "Settings": "Thiết lập",
-        "How many entries per page shall be shown?": "Mỗi trang sẽ hiển thị bao nhiêu mục?"
+        "How many entries per page shall be shown?": "Mỗi trang sẽ hiển thị bao nhiêu mục?",
+        "UptimeKuma settings": "Name",
+        "UptimeKuma on GitHub": "Comment",
+        "Report an Issue": "Báo cáo một vấn đề",
+        "UptimeKuma in the Appstore": "Name",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "nếu bạn thích tốc độ {name}  tôm và/hoặc bình luận về {name} trong {where}"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

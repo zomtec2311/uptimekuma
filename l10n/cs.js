@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Zahájení dokončeno: {state}",
     "Resolve completed: {state}": "Vyřešení dokončeno: {state}",
     "Settings": "Nastavení",
-    "How many entries per page shall be shown?": "Kolik záznamů na stránku se zobrazí?"
+    "How many entries per page shall be shown?": "Kolik záznamů na stránku se zobrazí?",
+    "UptimeKuma settings": "Nastavení uptimeKuma",
+    "UptimeKuma on GitHub": "Uptime Kuma on GitHub",
+    "Report an Issue": "Zpráva o vydání",
+    "UptimeKuma in the Appstore": "UptimeKuma v Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "pokud se vám líbí {name} a / nebo komentář k {name} v {where}"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);");

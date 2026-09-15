@@ -197,7 +197,12 @@
         "Start completed: {state}": "Börja avslutad: {state}",
         "Resolve completed: {state}": "Lösning: {state}",
         "Settings": "Inställningar",
-        "How many entries per page shall be shown?": "Hur många poster per sida ska visas?"
+        "How many entries per page shall be shown?": "Hur många poster per sida ska visas?",
+        "UptimeKuma settings": "UptimeKuma inställningar",
+        "UptimeKuma on GitHub": "UptimeKuma på GitHub",
+        "Report an Issue": "Rapportera en fråga",
+        "UptimeKuma in the Appstore": "UptimeKuma i Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "om du gillar {name}-frekvensen och/eller kommentaren på {name} i {where}"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

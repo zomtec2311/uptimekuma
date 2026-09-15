@@ -49,4 +49,6 @@ return ['routes'=>[
     ['name'=>'api#resolve','url'=>'/api/external/{token}/resolve','verb'=>'GET'],
     ['name'=>'api#failed','url'=>'/api/external/{token}/failed','verb'=>'GET'],
     ['name'=>'history#index','url'=>'/api/history','verb'=>'GET'],
+    ['name' => 'settings#getparams', 'url' => '/getparams', 'verb' => 'GET'],
+    ['name' => 'settings#setparam', 'url' => '/setparam/{who}/{what}', 'verb' => 'GET'],
 ]];

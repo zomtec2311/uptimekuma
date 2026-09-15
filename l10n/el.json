@@ -197,7 +197,12 @@
         "Start completed: {state}": "Η εκκίνηση ολοκληρώθηκε: {state}",
         "Resolve completed: {state}": "Η επίλυση ολοκληρώθηκε: {state}",
         "Settings": "Settings",
-        "How many entries per page shall be shown?": "Πόσες εγγραφές ανά σελίδα πρέπει να εμφανίζονται?"
+        "How many entries per page shall be shown?": "Πόσες εγγραφές ανά σελίδα πρέπει να εμφανίζονται?",
+        "UptimeKuma settings": "Settings UptimeKuma",
+        "UptimeKuma on GitHub": "UptimeKuma στο GitHub",
+        "Report an Issue": "Αναφορά θέματος",
+        "UptimeKuma in the Appstore": "UptimeKuma στο Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "εάν σας αρέσει {name} ⭐ ποσοστό και / ή 💬 σχόλιο για {name} στο {where}"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

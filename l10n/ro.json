@@ -197,7 +197,12 @@
         "Start completed: {state}": "Începeți completat: {state}",
         "Resolve completed: {state}": "Rezolvare completă: {state}",
         "Settings": "Configurări",
-        "How many entries per page shall be shown?": "Câte intrări vor fi afișate pe pagină?"
+        "How many entries per page shall be shown?": "Câte intrări vor fi afișate pe pagină?",
+        "UptimeKuma settings": "Configurări uptime Kuma",
+        "UptimeKuma on GitHub": "Uptime Kuma pe GitHub",
+        "Report an Issue": "Raportează o problemă",
+        "UptimeKuma in the Appstore": "Uptime Kuma în Appstore",
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "daca va place {name} rata si/sau comentarii despre {name} in {where}"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);"
 }

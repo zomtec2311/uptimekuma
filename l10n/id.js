@@ -198,6 +198,11 @@ OC.L10N.register(
     "Start completed: {state}": "Mulai selesai: {state}",
     "Resolve completed: {state}": "Resolve selesai: {state}",
     "Settings": "Pengaturan",
-    "How many entries per page shall be shown?": "Berapa banyak entri per halaman yang akan ditampilkan?"
+    "How many entries per page shall be shown?": "Berapa banyak entri per halaman yang akan ditampilkan?",
+    "UptimeKuma settings": "Pengaturan UptimeKuma",
+    "UptimeKuma on GitHub": "Uptime Kuma di GitHub",
+    "Report an Issue": "Laporkan sebuah Isu",
+    "UptimeKuma in the Appstore": "Uptime Kuma in the Appstore",
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jika anda suka {name} Averrate dan / atau komentar di {name} dalam {where}"
 },
 "nplurals=1; plural=0;");
