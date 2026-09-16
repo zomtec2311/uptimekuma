@@ -190,7 +190,7 @@
         "No history entries found.": "Es wurden keine Verlaufs-Einträge gefunden.",
         "The three actions on the job are only intended for manual testing of the messages.": "Die drei Aktionen am Job sind nur zum manuellen Testen der Nachrichten gedacht.",
         "Treat these URLs like a password because the token is in them. In the script, the token should not be in publicly readable files.": "Behandeln sie diese URLs wie ein Passwort, weil das token in ihnen ist. Im Skript sollte sich das Token nicht in öffentlich lesbaren Dateien befinden.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Externe Skripte können den optionalen X-UptimeKuma-Source-Header senden. Auf diese Weise können Sie einen ausgeführten Bash, ein PHP-Skript, ein Python-Skript oder einen anderen Aufrufer genauer identifizieren.",
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "Externe Skripte können den optionalen X-UptimeKuma-Source-Header senden. Auf diese Weise können ein ausgeführtes Bash, ein PHP-Skript, ein Python-Skript oder ein anderer Aufrufer genauer identifiziert werden.",
         "Incident started": "Vorfall gestartet",
         "Incident started with Kuma-ID: {value}": "Vorfall gestartet mit Kuma-ID: {value}",
         "Start completed:": "Start abgeschlossen:",
