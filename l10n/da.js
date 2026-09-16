@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma på GitHub",
     "Report an Issue": "Meld en sag",
     "UptimeKuma in the Appstore": "UptimeKuma i Appstore",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "hvis du kan lide {name} Memorate og / eller Memory kommentar til {name} i {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "hvis du kan lide {name} Memorate og / eller Memory kommentar til {name} i {where}",
+    "Show the first history page.": "Vis den første historieside.",
+    "Show the last history page.": "Vis den sidste historikside.",
+    "Show history page {page}.": "Vis historik side {page}.",
+    "Jump several history pages.": "Spring over flere historiesider."
 },
 "nplurals=2; plural=n != 1;");

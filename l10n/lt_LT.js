@@ -202,6 +202,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma GitHub",
     "Report an Issue": "NAME OF TRANSLATORS",
     "UptimeKuma in the Appstore": "UptimeKuma ApphoterName",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jei Jums patinka {name} ® dažnis ir (arba) jūsų komentaras {name} {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jei Jums patinka {name} ® dažnis ir (arba) jūsų komentaras {name} {where}",
+    "Show the first history page.": "Rodyti pirmąjį istorijos puslapį.",
+    "Show the last history page.": "Rodyti paskutinį istorijos puslapį.",
+    "Show history page {page}.": "Rodyti istorijos puslapį {page}.",
+    "Jump several history pages.": "Pereiti kelis istorijos puslapius."
 },
 "nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);");

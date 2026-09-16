@@ -199,7 +199,11 @@
         "UptimeKuma on GitHub": "(في (جيت هوب",
         "Report an Issue": "Report an Issue",
         "UptimeKuma in the Appstore": "(في (آبستوير",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "إذا كنت تحب معدل {name} و/أو تعليق على {name} في {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "إذا كنت تحب معدل {name} و/أو تعليق على {name} في {where}",
+        "Show the first history page.": "اظهر صفحة التاريخ الأولى.",
+        "Show the last history page.": "أظهر آخر صفحة تاريخية.",
+        "Show history page {page}.": "صفحه التاريخ {page}.",
+        "Jump several history pages.": "اقفز عدة صفحات تاريخية."
     },
     "pluralForm": "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));"
 }

@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "Antaŭite fare de GitHub",
         "Report an Issue": "Raporto de afero",
         "UptimeKuma in the Appstore": "Antaŭite fare de la Appstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "se vi ŝatas {name} ⭐ indicon kaj/aŭ 💬 komenton sur {name} en la {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "se vi ŝatas {name} ⭐ indicon kaj/aŭ 💬 komenton sur {name} en la {where}",
+        "Show the first history page.": "Montri la unuan historian paĝon.",
+        "Show the last history page.": "Montri la lastan historian paĝon.",
+        "Show history page {page}.": "La historiopaĝo {page}.",
+        "Jump several history pages.": "Aldonu plurajn historiopaĝojn."
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

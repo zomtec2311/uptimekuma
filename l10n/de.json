@@ -179,8 +179,8 @@
         "Reset": "Zurücksetzen",
         "Entries": "Einträge",
         "Page": "Seite",
-        "Show the previous history page.": "Zeigen Sie die vorherige Verlaufseite.",
-        "Show the next history page.": "Zeigen Sie die nächste Verlaufseite.",
+        "Show the previous history page.": "Vorherige Verlaufsseite zeigen.",
+        "Show the next history page.": "Nächste Verlaufsseite zeigen.",
         "Reload the current history page.": "Laden Sie die aktuelle Verlaufseite neu.",
         "Loading history...": "Lade Verlauf...",
         "Client": "Client",
@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "UptimeKuma auf GitHub",
         "Report an Issue": "Ein Problem melden",
         "UptimeKuma in the Appstore": "UptimeKuma im Appstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "Wenn dir {name} gefällt, ⭐ bewerte und/oder 💬 kommentiere {name} im {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "Wenn dir {name} gefällt, ⭐ bewerte und/oder 💬 kommentiere {name} im {where}",
+        "Show the first history page.": "Erste Verlaufsseite zeigen.",
+        "Show the last history page.": "Letzte Verlaufsseite zeigen.",
+        "Show history page {page}.": "Verlaufsseite {page} zeigen.",
+        "Jump several history pages.": "Mehrere Verlaufsseiten springen."
     },
     "pluralForm": "nplurals=2; plural=(n != 1);"
 }

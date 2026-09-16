@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "UptimeKuma on GitHub",
         "Report an Issue": "Ilmoita numero",
         "UptimeKuma in the Appstore": "UptimeKuma in the Appstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jos pidät {name} korko ja/tai kommentti {name} {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jos pidät {name} korko ja/tai kommentti {name} {where}",
+        "Show the first history page.": "Näytä historian ensimmäinen sivu.",
+        "Show the last history page.": "Näytä historian viimeinen sivu.",
+        "Show history page {page}.": "Näytä historia sivu {page}.",
+        "Jump several history pages.": "Hypätä useita historian sivuja."
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

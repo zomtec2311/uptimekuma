@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "GitHub의 UptimeKuma",
     "Report an Issue": "자주 묻는 질문",
     "UptimeKuma in the Appstore": "Appstore에서 UptimeKuma",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}",
+    "Show the first history page.": "첫 번째 역사 페이지보기.",
+    "Show the last history page.": "마지막 역사 페이지보기.",
+    "Show history page {page}.": "역사 페이지 {page}.",
+    "Jump several history pages.": "몇 가지 역사 페이지를 이동합니다."
 },
 "nplurals=1; plural=0;");

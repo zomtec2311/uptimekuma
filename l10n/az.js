@@ -202,6 +202,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "GitHub-da UptimeKuma",
     "Report an Issue": "Hesabat",
     "UptimeKuma in the Appstore": "Appstore UptimeKuma",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN ⭐ faizi və / ya 💬 {where} {name}-də {name}-da 💬"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN ⭐ faizi və / ya 💬 {where} {name}-də {name}-da 💬",
+    "Show the first history page.": "İlk tarixi səhifə göstərin.",
+    "Show the last history page.": "Son tarixin səhifəsini göstərin.",
+    "Show history page {page}.": "Qeydiyyat səhifəsi {page}.",
+    "Jump several history pages.": "Bir neçə tarixi səhifə səhifə."
 },
 "nplurals=2; plural=n != 1;");

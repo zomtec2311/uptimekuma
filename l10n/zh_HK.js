@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "GitHub上的UptimeKuma",
     "Report an Issue": "回報問題",
     "UptimeKuma in the Appstore": "Appstore中的UptimeKuma",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "如果您喜歡{name}⭐率和/或在{where}中對{name}發💬表評論"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "如果您喜歡{name}⭐率和/或在{where}中對{name}發💬表評論",
+    "Show the first history page.": "顯示第一個紀錄頁面。",
+    "Show the last history page.": "顯示最後一個紀錄頁面。",
+    "Show history page {page}.": "顯示歷史紀錄第{page}頁。",
+    "Jump several history pages.": "跳轉幾個歷史記錄頁面。"
 },
 "nplurals=1; plural=0;");

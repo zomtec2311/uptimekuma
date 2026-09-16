@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma on GitHub",
     "Report an Issue": "Report an Issue",
     "UptimeKuma in the Appstore": "UptimeKuma in the Appstore",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}",
+    "Show the first history page.": "Show the first history page.",
+    "Show the last history page.": "Show the last history page.",
+    "Show history page {page}.": "Show history page {page}.",
+    "Jump several history pages.": "Jump several history pages."
 },
 "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);");

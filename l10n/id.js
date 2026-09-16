@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "Uptime Kuma di GitHub",
     "Report an Issue": "Laporkan sebuah Isu",
     "UptimeKuma in the Appstore": "Uptime Kuma in the Appstore",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jika anda suka {name} Averrate dan / atau komentar di {name} dalam {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jika anda suka {name} Averrate dan / atau komentar di {name} dalam {where}",
+    "Show the first history page.": "Tampilkan halaman sejarah pertama.",
+    "Show the last history page.": "Tampilkan halaman sejarah terakhir.",
+    "Show history page {page}.": "Tampilkan halaman sejarah {page}.",
+    "Jump several history pages.": "Langsung beberapa halaman sejarah."
 },
 "nplurals=1; plural=0;");

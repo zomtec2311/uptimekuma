@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma na GitHub",
     "Report an Issue": "Poročaj o vprašanju",
     "UptimeKuma in the Appstore": "UptimeKuma v aplikaciji",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "če vam je všeč stopnja {name} in/ali komentar na {name} v {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "če vam je všeč stopnja {name} in/ali komentar na {name} v {where}",
+    "Show the first history page.": "Prikaži prvo stran zgodovine.",
+    "Show the last history page.": "Prikaži zadnjo stran zgodovine.",
+    "Show history page {page}.": "Prikaži zgodovino stran {page}.",
+    "Jump several history pages.": "Skoči več zgodovinskih strani."
 },
 "nplurals=4; plural=(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3));");

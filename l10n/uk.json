@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "GitHub - відео @ GitHub",
         "Report an Issue": "Звіт про випуск",
         "UptimeKuma in the Appstore": "UptimeKuma в Appstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}",
+        "Show the first history page.": "Показати першу сторінку історії.",
+        "Show the last history page.": "Показати останні історії сторінки.",
+        "Show history page {page}.": "Показати історичну сторінку {page}.",
+        "Jump several history pages.": "Перемикач кількох сторінок історії."
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

@@ -202,6 +202,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "Uptimekama on Github",
     "Report an Issue": "รายงาน ประเด็น",
     "UptimeKuma in the Appstore": "การ ปรับ ตัว ให้ เหมาะ กับ เวลา",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ถ้าคุณชอบ {name} ⭐ อัตราและ/หรือ 💬 หมายเหตุเกี่ยวกับ {name} ใน {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ถ้าคุณชอบ {name} ⭐ อัตราและ/หรือ 💬 หมายเหตุเกี่ยวกับ {name} ใน {where}",
+    "Show the first history page.": "แสดงหน้าประวัติศาสตร์หน้าแรก.",
+    "Show the last history page.": "แสดงหน้าประวัติศาสตร์ตัวสุดท้าย.",
+    "Show history page {page}.": "แสดงประวัติศาสตร์หน้า {page}.",
+    "Jump several history pages.": "กระโดดหลายหน้าประวัติศาสตร์."
 },
 "nplurals=1; plural=0;");

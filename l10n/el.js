@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma στο GitHub",
     "Report an Issue": "Αναφορά θέματος",
     "UptimeKuma in the Appstore": "UptimeKuma στο Appstore",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "εάν σας αρέσει {name} ⭐ ποσοστό και / ή 💬 σχόλιο για {name} στο {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "εάν σας αρέσει {name} ⭐ ποσοστό και / ή 💬 σχόλιο για {name} στο {where}",
+    "Show the first history page.": "Εμφάνιση της πρώτης σελίδας ιστορίας.",
+    "Show the last history page.": "Δείξε την τελευταία σελίδα ιστορίας.",
+    "Show history page {page}.": "Εμφάνιση ιστορικού σελίδα {page}.",
+    "Jump several history pages.": "Πήδα αρκετές σελίδες ιστορίας."
 },
 "nplurals=2; plural=n != 1;");

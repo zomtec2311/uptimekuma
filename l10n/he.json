@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "בסביבה הקרובה של GitHub",
         "Report an Issue": "דיווח על בעיה",
         "UptimeKuma in the Appstore": "UptimeKuma בחנות",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "אם אתה אוהב {name} ⭐ rate ו / או 💬 תגובה על {name} ב {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "אם אתה אוהב {name} ⭐ rate ו / או 💬 תגובה על {name} ב {where}",
+        "Show the first history page.": "הצג את דף ההיסטוריה הראשון.",
+        "Show the last history page.": "הצג את דף ההיסטוריה האחרון.",
+        "Show history page {page}.": "דף ההיסטוריה {page}.",
+        "Jump several history pages.": "קפוץ מספר דפי היסטוריה."
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);"
 }

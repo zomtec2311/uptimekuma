@@ -200,6 +200,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "জিওহাবে আপটাইমকুমা",
     "Report an Issue": "একটি ইস্যু প্রতিবেদন",
     "UptimeKuma in the Appstore": "আ্যপার্টমেন্টে আপটাইমকুমা",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN-র হার এবং/অথবা {name}- র মধ্যে {name}- র উপর মন্তব্য করুন {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "xYN-র হার এবং/অথবা {name}- র মধ্যে {name}- র উপর মন্তব্য করুন {where}",
+    "Show the first history page.": "পূর্ববর্তী তথ্যের পৃষ্ঠা প্রদর্শন করা হবে.",
+    "Show the last history page.": "পূর্ববর্তী তথ্যের পৃষ্ঠা প্রদর্শন করা হবে.",
+    "Show history page {page}.": "Show history page {page}.",
+    "Jump several history pages.": "একাধিক ওয়েবপেজ চিহ্ন দিন ।."
 },
 "nplurals=2; plural=n > 1;");

@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "UptimeKuma on GitHub",
         "Report an Issue": "Report an Issue",
         "UptimeKuma in the Appstore": "Appstore中的UptimeKuma",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "如果您喜歡{name}⭐率和/或在{where}中對{name}發💬表評論"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "如果您喜歡{name}⭐率和/或在{where}中對{name}發💬表評論",
+        "Show the first history page.": "顯示第一個紀錄頁面。",
+        "Show the last history page.": "Show the last history page.",
+        "Show history page {page}.": "顯示歷史紀錄第{page}頁。",
+        "Jump several history pages.": "跳轉幾個歷史記錄頁面。"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

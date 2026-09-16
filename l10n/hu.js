@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "UptimeKuma on GitHub",
     "Report an Issue": "Jelentés egy kiadásról",
     "UptimeKuma in the Appstore": "UptimeKuma az Appstore-ban",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ha szereti a {name}-t és / vagy a {name}-t az {where}-ben"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ha szereti a {name}-t és / vagy a {name}-t az {where}-ben",
+    "Show the first history page.": "Mutasd meg az első történelem oldalt.",
+    "Show the last history page.": "Mutasd meg az utolsó töri oldalt.",
+    "Show history page {page}.": "A történelem {page}. oldal megjelenítése.",
+    "Jump several history pages.": "Ugrás több történelem oldalak."
 },
 "nplurals=2; plural=n != 1;");

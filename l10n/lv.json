@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "UptimeKuma uz GitHub",
         "Report an Issue": "Ziņot par kādu jautājumu",
         "UptimeKuma in the Appstore": "UptimeKuma Apstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ja jums patīk {name} "
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "ja jums patīk {name} ",
+        "Show the first history page.": "Rādīt pirmo vēstures lapu.",
+        "Show the last history page.": "Rādīt pēdējo vēstures lapu.",
+        "Show history page {page}.": "Rādīt vēstures lapu {page}.",
+        "Jump several history pages.": "Lēkt vairākas vēstures lapas."
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);"
 }

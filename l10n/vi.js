@@ -203,6 +203,10 @@ OC.L10N.register(
     "UptimeKuma on GitHub": "Comment",
     "Report an Issue": "Báo cáo một vấn đề",
     "UptimeKuma in the Appstore": "Name",
-    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "nếu bạn thích tốc độ {name}  tôm và/hoặc bình luận về {name} trong {where}"
+    "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "nếu bạn thích tốc độ {name}  tôm và/hoặc bình luận về {name} trong {where}",
+    "Show the first history page.": "Hiển thị trang lịch sử đầu tiên.",
+    "Show the last history page.": "Hiển thị trang lịch sử cuối cùng.",
+    "Show history page {page}.": "Hiện trang {page} lịch sử.",
+    "Jump several history pages.": "Nhảy vài trang lịch sử."
 },
 "nplurals=1; plural=0;");

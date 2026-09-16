@@ -202,7 +202,11 @@
         "UptimeKuma on GitHub": "UptimeKuma na GitHub",
         "Report an Issue": "Zgłoś wydanie",
         "UptimeKuma in the Appstore": "UptimeKuma w Appstore",
-        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jeśli lubisz {name} i / lub komentarz o {name} w {where}"
+        "if you like {name} ⭐ rate and/or 💬 comment on {name} in the {where}": "jeśli lubisz {name} i / lub komentarz o {name} w {where}",
+        "Show the first history page.": "Pokaż pierwszą stronę historii.",
+        "Show the last history page.": "Pokaż ostatnią stronę historii.",
+        "Show history page {page}.": "Pokaż historię strony {page}.",
+        "Jump several history pages.": "Przejdź kilka stron historii."
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }
