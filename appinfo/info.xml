@@ -20,7 +20,7 @@
 - 🔑 **Token-basierte API:** Sichere Schnittstelle für externe Skripte und Automatisierungs-Workflows.
 - 🎯 **Granulare Rechte:** Weise einzelnen Jobs spezifische API-Token für präzise Zugriffskontrolle zu.
 - 🤖 **Skript-Automatisierung:** Steuere Statusseiten vollständig automatisiert von außen.]]></description>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <licence>agpl</licence>
 	<author mail="wtoedt@gmail.com" homepage="https://github.com/zomtec2311/uptimekuma">Wolfgang Tödt</author>
 	<documentation>

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2
+
+### Changed
+-  Previously executed jobs: correct pagination instead of the 2 buttons previous and next
+- Previously executed jobs: Abbreviated error text. Complete text at hover
+- **l10n:** Language files extended by additional phrases
+
 ## 1.0.1
 
 ### Changed
