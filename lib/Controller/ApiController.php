@@ -100,7 +100,8 @@ class ApiController extends Controller {
             $i = $this->service->failed($j, $msg);
             $this->history->log($jobId, 'failed', $source, true, '', $tokenEntity->getId());
             return new JSONResponse(['ok'=>true,'state'=>$i->getState()]);
-        } catch (\Throwable $e) {
+        }
+        catch (\Throwable $e) {
             $this->history->log($jobId, $action, $source, false, $e->getMessage(), $tokenEntity?->getId());
             return new JSONResponse(['ok'=>false,'error'=>$e->getMessage()],400);
         }

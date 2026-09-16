@@ -63,7 +63,8 @@ class TokenMapper extends QBMapper {
             ->setMaxResults(1);
         try {
             return $this->findEntity($qb);
-        } catch (\Throwable $e) {
+        }
+        catch (\Throwable $e) {
             return null;
         }
     }

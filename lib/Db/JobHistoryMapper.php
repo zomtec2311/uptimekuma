@@ -50,35 +50,7 @@ class JobHistoryMapper extends QBMapper {
     ): array {
         $qb = $this->db->getQueryBuilder();
         $qb->select('*')->from($this->tableName);
-
-        if ($jobId !== null && $jobId > 0) {
-            $qb->andWhere($qb->expr()->eq('job_id', $qb->createNamedParameter($jobId, IQueryBuilder::PARAM_INT)));
-        }
-        if ($action !== '') {
-            $qb->andWhere($qb->expr()->eq('action', $qb->createNamedParameter($action, IQueryBuilder::PARAM_STR)));
-        }
-        if ($source !== '') {
-            if ($source === 'external-api') {
-                $qb->andWhere($qb->expr()->like('source', $qb->createNamedParameter('external-api%', IQueryBuilder::PARAM_STR)));
-            } else {
-                $qb->andWhere($qb->expr()->eq('source', $qb->createNamedParameter($source, IQueryBuilder::PARAM_STR)));
-            }
-        }
-        if ($success !== null) {
-            $qb->andWhere($qb->expr()->eq('success', $qb->createNamedParameter($success ? 1 : 0, IQueryBuilder::PARAM_INT)));
-        }
-        if ($search !== '') {
-            $like = '%' . $this->db->escapeLikeParameter($search) . '%';
-            $searchParam = $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR);
-            $qb->andWhere($qb->expr()->orX(
-                $qb->expr()->like('action', $searchParam),
-                $qb->expr()->like('source', $searchParam),
-                $qb->expr()->like('user_id', $searchParam),
-                $qb->expr()->like('ip_address', $searchParam),
-                $qb->expr()->like('user_agent', $searchParam),
-                $qb->expr()->like('error_message', $searchParam)
-            ));
-        }
+        $this->addFilters($qb, $jobId, $action, $source, $success, $search);
 
         $allowedSorts = [
             'createdAt' => 'created_at',
@@ -100,34 +72,32 @@ class JobHistoryMapper extends QBMapper {
         return $this->findEntities($qb);
     }
 
-    public function allentries(): int {
-        $qb = $this->db->getQueryBuilder();
-
-        $qb->select(
-            $qb->func()->count('id')
-        )
-        ->from($this->tableName);
-
-        return (int) $qb
-            ->executeQuery()
-            ->fetchOne();
-    }
-
-    public function countfindFiltered(
+    public function countFiltered(
         ?int $jobId,
         string $action,
         string $source,
         ?bool $success,
-        string $search,
-        string $sort,
-        string $direction
+        string $search
     ): int {
         $qb = $this->db->getQueryBuilder();
-        $qb->select(
-            $qb->func()->count('id')
-        )
-        ->from($this->tableName);
+        $qb->select($qb->func()->count('id'))->from($this->tableName);
+        $this->addFilters($qb, $jobId, $action, $source, $success, $search);
 
+        $result = $qb->executeQuery();
+        $count = (int)$result->fetchOne();
+        $result->closeCursor();
+
+        return $count;
+    }
+
+    private function addFilters(
+        IQueryBuilder $qb,
+        ?int $jobId,
+        string $action,
+        string $source,
+        ?bool $success,
+        string $search
+    ): void {
         if ($jobId !== null && $jobId > 0) {
             $qb->andWhere($qb->expr()->eq('job_id', $qb->createNamedParameter($jobId, IQueryBuilder::PARAM_INT)));
         }
@@ -146,35 +116,14 @@ class JobHistoryMapper extends QBMapper {
         }
         if ($search !== '') {
             $like = '%' . $this->db->escapeLikeParameter($search) . '%';
-            $searchParam = $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR);
             $qb->andWhere($qb->expr()->orX(
-                $qb->expr()->like('action', $searchParam),
-                $qb->expr()->like('source', $searchParam),
-                $qb->expr()->like('user_id', $searchParam),
-                $qb->expr()->like('ip_address', $searchParam),
-                $qb->expr()->like('user_agent', $searchParam),
-                $qb->expr()->like('error_message', $searchParam)
+                $qb->expr()->like('action', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR)),
+                $qb->expr()->like('source', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR)),
+                $qb->expr()->like('user_id', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR)),
+                $qb->expr()->like('ip_address', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR)),
+                $qb->expr()->like('user_agent', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR)),
+                $qb->expr()->like('error_message', $qb->createNamedParameter($like, IQueryBuilder::PARAM_STR))
             ));
         }
-
-        $allowedSorts = [
-            'createdAt' => 'created_at',
-            'jobId' => 'job_id',
-            'action' => 'action',
-            'source' => 'source',
-            'userId' => 'user_id',
-            'ipAddress' => 'ip_address',
-            'success' => 'success',
-        ];
-        $sortColumn = $allowedSorts[$sort] ?? 'created_at';
-        $sortDirection = strtoupper($direction) === 'ASC' ? 'ASC' : 'DESC';
-
-        $qb->orderBy($sortColumn, $sortDirection)
-            ->addOrderBy('id', 'DESC');
-
-        return (int) $qb
-            ->executeQuery()
-            ->fetchOne();
     }
-
 }

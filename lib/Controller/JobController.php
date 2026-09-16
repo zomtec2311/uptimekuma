@@ -183,8 +183,24 @@ class JobController extends Controller {
         return count($this->tokens->list($id));
     }
 
-    #[AdminRequired] public function createToken(int $id): JSONResponse { try { $p=$this->request->getParams(); return new JSONResponse($this->tokens->create($id,(string)($p['description']??''),isset($p['expiresAt'])&&$p['expiresAt']!==''?(int)$p['expiresAt']:null)); } catch (\Throwable $e) { return new JSONResponse(['error'=>$e->getMessage()],400); } }
-    #[AdminRequired] public function deleteToken(int $id): JSONResponse { $this->tokens->delete($id); return new JSONResponse(['ok'=>true]); }
+    #[AdminRequired]
+    public function createToken(int $id): JSONResponse {
+        try {
+            $p=$this->request->getParams();
+            return new JSONResponse($this->tokens->create($id,(string)($p['description']??''),isset($p['expiresAt'])&&$p['expiresAt']!==''?(int)$p['expiresAt']:null));
+        }
+        catch (\Throwable $e) {
+            return new JSONResponse(['error'=>$e->getMessage()],400);
+        }
+    }
 
-    private function ser($j): array { return ['id'=>$j->getId(),'name'=>$j->getName(),'instanceId'=>$j->getInstanceId(),'statusSlug'=>$j->getStatusSlug(),'title'=>$j->getTitle(),'content'=>$j->getContent(),'style'=>$j->getStyle(),'enabled'=>$j->getEnabled()]; }
+    #[AdminRequired]
+    public function deleteToken(int $id): JSONResponse {
+        $this->tokens->delete($id);
+        return new JSONResponse(['ok'=>true]);
+    }
+
+    private function ser($j): array {
+        return ['id'=>$j->getId(),'name'=>$j->getName(),'instanceId'=>$j->getInstanceId(),'statusSlug'=>$j->getStatusSlug(),'title'=>$j->getTitle(),'content'=>$j->getContent(),'style'=>$j->getStyle(),'enabled'=>$j->getEnabled()];
+    }
 }

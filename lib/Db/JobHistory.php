@@ -61,26 +61,102 @@ class JobHistory extends Entity {
         }
     }
 
-    public function getJobId(): ?int { return $this->jobId === null ? null : (int)$this->jobId; }
-    public function setJobId(?int $value): void { $this->jobId = $value; $this->markFieldUpdated('jobId'); }
-    public function getAction(): string { return (string)$this->action; }
-    public function setAction(string $value): void { $this->action = $value; $this->markFieldUpdated('action'); }
-    public function getSource(): string { return (string)$this->source; }
-    public function setSource(string $value): void { $this->source = $value; $this->markFieldUpdated('source'); }
-    public function getUserId(): ?string { return $this->userId === null ? null : (string)$this->userId; }
-    public function setUserId(?string $value): void { $this->userId = $value; $this->markFieldUpdated('userId'); }
-    public function getIpAddress(): string { return (string)$this->ipAddress; }
-    public function setIpAddress(string $value): void { $this->ipAddress = $value; $this->markFieldUpdated('ipAddress'); }
-    public function getUserAgent(): string { return (string)$this->userAgent; }
-    public function setUserAgent(string $value): void { $this->userAgent = $value; $this->markFieldUpdated('userAgent'); }
-    public function getTokenId(): ?int { return $this->tokenId === null ? null : (int)$this->tokenId; }
-    public function setTokenId(?int $value): void { $this->tokenId = $value; $this->markFieldUpdated('tokenId'); }
-    public function getTokenDescription(): ?string { return $this->tokenDescription === null ? null : (string)$this->tokenDescription; }
-    public function setTokenDescription(?string $value): void { $this->tokenDescription = $value; $this->markFieldUpdated('tokenDescription'); }
-    public function getSuccess(): bool { return (bool)$this->success; }
-    public function setSuccess(bool $value): void { $this->success = $value ? 1 : 0; $this->markFieldUpdated('success'); }
-    public function getErrorMessage(): string { return (string)$this->errorMessage; }
-    public function setErrorMessage(string $value): void { $this->errorMessage = $value; $this->markFieldUpdated('errorMessage'); }
-    public function getCreatedAt(): int { return (int)$this->createdAt; }
-    public function setCreatedAt(int $value): void { $this->createdAt = $value; $this->markFieldUpdated('createdAt'); }
+    public function getJobId(): ?int {
+        return $this->jobId === null ? null : (int)$this->jobId;
+    }
+
+    public function setJobId(?int $value): void {
+        $this->jobId = $value;
+        $this->markFieldUpdated('jobId');
+    }
+
+    public function getAction(): string {
+        return (string)$this->action;
+    }
+
+    public function setAction(string $value): void {
+        $this->action = $value;
+        $this->markFieldUpdated('action');
+    }
+
+    public function getSource(): string {
+        return (string)$this->source;
+    }
+
+    public function setSource(string $value): void {
+        $this->source = $value;
+        $this->markFieldUpdated('source');
+    }
+
+    public function getUserId(): ?string {
+        return $this->userId === null ? null : (string)$this->userId;
+    }
+
+    public function setUserId(?string $value): void {
+        $this->userId = $value;
+        $this->markFieldUpdated('userId');
+    }
+
+    public function getIpAddress(): string {
+        return (string)$this->ipAddress;
+    }
+
+    public function setIpAddress(string $value): void {
+        $this->ipAddress = $value;
+        $this->markFieldUpdated('ipAddress');
+    }
+
+    public function getUserAgent(): string {
+        return (string)$this->userAgent;
+    }
+
+    public function setUserAgent(string $value): void {
+        $this->userAgent = $value;
+        $this->markFieldUpdated('userAgent');
+    }
+
+    public function getTokenId(): ?int {
+        return $this->tokenId === null ? null : (int)$this->tokenId;
+    }
+
+    public function setTokenId(?int $value): void {
+        $this->tokenId = $value;
+        $this->markFieldUpdated('tokenId');
+    }
+
+    public function getTokenDescription(): ?string {
+        return $this->tokenDescription === null ? null : (string)$this->tokenDescription;
+    }
+
+    public function setTokenDescription(?string $value): void {
+        $this->tokenDescription = $value;
+        $this->markFieldUpdated('tokenDescription');
+    }
+
+    public function getSuccess(): bool {
+        return (bool)$this->success;
+    }
+
+    public function setSuccess(bool $value): void {
+        $this->success = $value ? 1 : 0;
+        $this->markFieldUpdated('success');
+    }
+
+    public function getErrorMessage(): string {
+        return (string)$this->errorMessage;
+    }
+
+    public function setErrorMessage(string $value): void {
+        $this->errorMessage = $value;
+        $this->markFieldUpdated('errorMessage');
+    }
+
+    public function getCreatedAt(): int {
+        return (int)$this->createdAt;
+    }
+
+    public function setCreatedAt(int $value): void {
+        $this->createdAt = $value;
+        $this->markFieldUpdated('createdAt');
+    }
 }
