@@ -2,8 +2,8 @@
 	/* display: flex; */
      width: 100%;
 	justify-content: center;
-    padding-left: 10%;
-	padding-right: 5%;
+    padding-left: 2%;
+	padding-right: 2%;
 }
 .uptimekuma-admin {
     /*background-color: white;*/
@@ -11,8 +11,8 @@
     min-height: 100%;
     height: auto;
     box-sizing: border-box;
-    padding-left: 10%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-bottom: 40px;
     overflow-y: auto;
 }
@@ -323,7 +323,7 @@
 }
 
 .uptimekuma-admin .uk-history-search input {
-    min-width: 240px;
+    min-width: 340px;
 }
 
 .uptimekuma-admin .uk-history-filter-buttons {
@@ -374,6 +374,13 @@
     text-overflow: ellipsis;
 }
 
+.uptimekuma-admin .uk-history-result {
+    /*max-width: 400px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .uptimekuma-admin .uk-history-token {
     display: block;
     color: var(--color-text-maxcontrast);
@@ -401,9 +408,13 @@
 
 .uptimekuma-admin .uk-history-error-text {
     display: block;
-    max-width: 260px;
+    max-width: 90%;
     margin-top: 4px;
-    overflow-wrap: anywhere;
+    /*overflow-wrap: anywhere;*/
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .uptimekuma-admin .uk-history-empty,

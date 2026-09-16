@@ -31,6 +31,7 @@ namespace OCA\UptimeKuma\Service;
 use OCA\UptimeKuma\Db\{JobHistory, JobHistoryMapper, JobMapper, TokenMapper};
 use OCP\IRequest;
 use OCP\IUserSession;
+use OCP\IAppConfig;
 
 class JobHistoryService {
     public function __construct(
@@ -38,7 +39,8 @@ class JobHistoryService {
         private JobMapper $jobs,
         private TokenMapper $tokens,
         private IRequest $request,
-        private IUserSession $userSession
+        private IUserSession $userSession,
+        private IAppConfig $appConfig,
     ) {}
 
     public function log(
@@ -96,6 +98,10 @@ class JobHistoryService {
         $offset = max(0, $offset);
         $rows = $this->history->findFiltered($jobId, $action, $source, $success, trim($search), $sort, $direction, $limit, $offset);
         $hasMore = count($rows) > $limit;
+        $allentries = $this->history->countfindFiltered($jobId, $action, $source, $success, trim($search), $sort, $direction); //$this->history->allentries();
+        $para_entries_per_page = $this->appConfig->getValueInt('uptimekuma', 'uptimekuma_entries_per_page_previously_jobs',25);
+        $entries_per_page = ($para_entries_per_page < 1) ? 1 : $para_entries_per_page;
+        $pageCount = (int) ceil($allentries / $entries_per_page);
         if ($hasMore) {
             array_pop($rows);
         }
@@ -127,6 +133,7 @@ class JobHistoryService {
         return [
             'items' => $items,
             'hasMore' => $hasMore,
+            'allpages' => $pageCount,
             'offset' => $offset,
             'limit' => $limit,
         ];
