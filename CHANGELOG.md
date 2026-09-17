@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4
+
+### Fixed
+- Typo in HistoryCleanupService caused a 500 server error
+
 ## 1.0.3
 
 ### Added
