@@ -52,7 +52,7 @@ class SettingsController extends Controller {
 		private IAppManager $appManager,
 		private IAppConfig $appConfig,
 	) {
-		parent::__construct('logcleaner', $request);
+		parent::__construct('uptimekuma', $request);
 		$this->l = $l;
 		$this->config = $config;
 		$this->appManager = $appManager;

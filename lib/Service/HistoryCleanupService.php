@@ -18,7 +18,7 @@ class HistoryCleanupService {
     ) {}
 
     public function getRetentionDays(): int {
-        $value = $this->appConfig->getValueInt('uptimekuma', 'uptimekuma_history_retention_days',365),
+        $value = $this->appConfig->getValueInt('uptimekuma', 'uptimekuma_history_retention_days',365);
 
         if ($value < 0) {
             $value = 365;
