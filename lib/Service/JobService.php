@@ -28,19 +28,19 @@ declare(strict_types=1);
 
 namespace OCA\UptimeKuma\Service;
 
-use OCA\UptimeKuma\Db\{Job,JobMapper,InstanceMapper,Incident,IncidentMapper};
+use OCA\UptimeKuma\Db\{Job,JobMapper,InstanceMapper,Incident,IncidentMapper,TokenMapper,JobHistoryMapper};
 use OCP\IL10N;
 use RuntimeException;
 
 class JobService {
     private array $lastSyncInfo = [];
-     private $l;
+    private $l;
 
     public function getLastSyncInfo(): array {
         return $this->lastSyncInfo;
     }
 
-    public function __construct(private JobMapper $jobs,private InstanceMapper $instances,private IncidentMapper $incidents,private KumaClient $kuma, IL10N $l,) {
+    public function __construct(private JobMapper $jobs,private InstanceMapper $instances,private IncidentMapper $incidents,private KumaClient $kuma, IL10N $l,private TokenMapper $tokens,private JobHistoryMapper $history) {
         $this->l = $l;
     }
 
@@ -72,6 +72,16 @@ class JobService {
         $j->setEnabled((bool)($d['enabled']??true));
         $j->setUpdatedAt(time());
         return $this->jobs->update($j);
+    }
+
+    public function delete(int $id): void {
+        $job=$this->jobs->find($id);
+        foreach($this->tokens->findByJob($id) as $token){$this->tokens->delete($token);}
+        foreach($this->incidents->findAllByJob($id) as $incident){
+            $this->incidents->delete($incident);
+        }
+        $this->history->deleteByJob($id);
+        $this->jobs->delete($job);
     }
 
     public function start(Job $j):Incident{

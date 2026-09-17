@@ -71,7 +71,7 @@ class InstanceController extends Controller {
 
     #[AdminRequired]
     public function destroy(int $id): JSONResponse {
-        $this->mapper->delete($this->mapper->find($id));
+        $this->service->delete($id);
         return new JSONResponse(['ok' => true]);
     }
 

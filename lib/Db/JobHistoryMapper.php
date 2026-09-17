@@ -126,4 +126,37 @@ class JobHistoryMapper extends QBMapper {
             ));
         }
     }
+
+    public function deleteByJob(int $jobId): int {
+        $qb = $this->db->getQueryBuilder();
+        $qb->delete($this->tableName)
+            ->where($qb->expr()->eq('job_id', $qb->createNamedParameter($jobId, IQueryBuilder::PARAM_INT)));
+        return $qb->executeStatement();
+    }
+
+    public function deleteOlderThan(int $cutoff, int $limit): int {
+        $limit = max(1, min($limit, 5000));
+        $select = $this->db->getQueryBuilder();
+        $select->select('id')
+            ->from($this->tableName)
+            ->where($select->expr()->lt('created_at', $select->createNamedParameter($cutoff, IQueryBuilder::PARAM_INT)))
+            ->orderBy('id', 'ASC')
+            ->setMaxResults($limit);
+
+        $result = $select->executeQuery();
+        $ids = [];
+        while ($row = $result->fetch()) {
+            $ids[] = (int)$row['id'];
+        }
+        $result->closeCursor();
+
+        if ($ids === []) {
+            return 0;
+        }
+
+        $delete = $this->db->getQueryBuilder();
+        $delete->delete($this->tableName)
+            ->where($delete->expr()->in('id', $delete->createNamedParameter($ids, IQueryBuilder::PARAM_INT_ARRAY)));
+        return $delete->executeStatement();
+    }
 }

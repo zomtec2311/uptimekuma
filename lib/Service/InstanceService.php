@@ -30,6 +30,7 @@ namespace OCA\UptimeKuma\Service;
 
 use OCA\UptimeKuma\Db\Instance;
 use OCA\UptimeKuma\Db\InstanceMapper;
+use OCA\UptimeKuma\Db\JobMapper;
 use OCP\Security\ICrypto;
 use OCP\IL10N;
 use RuntimeException;
@@ -41,6 +42,8 @@ class InstanceService {
         private InstanceMapper $mapper,
         private ICrypto $crypto,
         private KumaClient $kumaClient,
+        private JobMapper $jobMapper,
+        private JobService $jobService,
         IL10N $l,
     ) {
         $this->l = $l;
@@ -84,6 +87,14 @@ class InstanceService {
 
         $entity->setUpdatedAt(time());
         return $this->mapper->update($entity);
+    }
+
+    public function delete(int $id): void {
+        $instance = $this->mapper->find($id);
+        foreach ($this->jobMapper->findByInstance($id) as $job) {
+            $this->jobService->delete($job->getId());
+        }
+        $this->mapper->delete($instance);
     }
 
     public function test(Instance $instance): void {

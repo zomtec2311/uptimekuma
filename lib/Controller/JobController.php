@@ -102,7 +102,7 @@ class JobController extends Controller {
 
     #[AdminRequired]
     public function destroy(int $id): JSONResponse {
-        $this->jobs->delete($this->jobs->find($id));
+        $this->service->delete($id);
         return new JSONResponse(['ok'=>true]);
     }
 
