@@ -208,7 +208,7 @@ OC.L10N.register(
     "Show the last history page.": "Letzte Verlaufsseite zeigen.",
     "Show history page {page}.": "Verlaufsseite {page} zeigen.",
     "Jump several history pages.": "Mehrere Verlaufsseiten springen.",
-    "Automatic deletion of previously executed jobs older than x days": "Automatisches Löschen von zuvor ausgeführten Jobs älter als x Tage",
+    "Automatic deletion of previously executed jobs older than x days": "Automatisches Löschen von bisher ausgeführten Jobs älter als x Tage",
     "(Backgroundjob is executed once daily)": "(Backgroundjob wird einmal täglich ausgeführt)",
     "never": "nie"
 },
