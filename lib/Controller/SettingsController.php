@@ -63,6 +63,7 @@ class SettingsController extends Controller {
 		return new DataResponse([
 			'uptimekuma_entries_per_page_previously_jobs' => $this->appConfig->getValueInt('uptimekuma', 'uptimekuma_entries_per_page_previously_jobs',25),
 			'uptimekuma_version' => $this->appManager->getAppVersion('uptimekuma', true),
+			'uptimekuma_history_retention_days' => $this->appConfig->getValueInt('uptimekuma', 'uptimekuma_history_retention_days',365),
 		]);
 	}
 
