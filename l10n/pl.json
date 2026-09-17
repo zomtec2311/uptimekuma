@@ -206,7 +206,10 @@
         "Show the first history page.": "Pokaż pierwszą stronę historii.",
         "Show the last history page.": "Pokaż ostatnią stronę historii.",
         "Show history page {page}.": "Pokaż historię strony {page}.",
-        "Jump several history pages.": "Przejdź kilka stron historii."
+        "Jump several history pages.": "Przejdź kilka stron historii.",
+        "Automatic deletion of previously executed jobs older than x days": "Automatyczne usuwanie wcześniej wykonanych zadań starszych niż x dni",
+        "(Backgroundjob is executed once daily)": "(Praca podstawowa wykonywana jest raz dziennie)",
+        "never": "nigdy"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

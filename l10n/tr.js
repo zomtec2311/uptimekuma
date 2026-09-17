@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "İlk tarih sayfasını gösterin.",
     "Show the last history page.": "Son tarih sayfasını gösterin.",
     "Show history page {page}.": "Tarih sayfası {page}.",
-    "Jump several history pages.": "Birkaç tarih sayfasını atlayın."
+    "Jump several history pages.": "Birkaç tarih sayfasını atlayın.",
+    "Automatic deletion of previously executed jobs older than x days": "Daha önce yapılan işleri x günden daha uzun süre idam etti",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob günlük olarak idam edilir)",
+    "never": "asla"
 },
 "nplurals=2; plural=n != 1;");

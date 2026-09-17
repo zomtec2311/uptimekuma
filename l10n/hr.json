@@ -206,7 +206,10 @@
         "Show the last history page.": "Show the last history page.",
         "Show history page {page}.": "Show history page {page}.",
         "Jump several history pages.": "Jump several history pages.",
-        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely."
+        "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.",
+        "Automatic deletion of previously executed jobs older than x days": "Automatic deletion of previously executed jobs older than x days",
+        "(Backgroundjob is executed once daily)": "(Backgroundjob is executed once daily)",
+        "never": "never"
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);"
 }

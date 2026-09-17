@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Hiển thị trang lịch sử đầu tiên.",
     "Show the last history page.": "Hiển thị trang lịch sử cuối cùng.",
     "Show history page {page}.": "Hiện trang {page} lịch sử.",
-    "Jump several history pages.": "Nhảy vài trang lịch sử."
+    "Jump several history pages.": "Nhảy vài trang lịch sử.",
+    "Automatic deletion of previously executed jobs older than x days": "Tự động xóa các tác vụ đã thực hiện trước cũ hơn x ngày",
+    "(Backgroundjob is executed once daily)": "(Ngày nào cũng có lần bị bắt)",
+    "never": "không bao giờ"
 },
 "nplurals=1; plural=0;");

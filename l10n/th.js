@@ -206,6 +206,9 @@ OC.L10N.register(
     "Show the first history page.": "แสดงหน้าประวัติศาสตร์หน้าแรก.",
     "Show the last history page.": "แสดงหน้าประวัติศาสตร์ตัวสุดท้าย.",
     "Show history page {page}.": "แสดงประวัติศาสตร์หน้า {page}.",
-    "Jump several history pages.": "กระโดดหลายหน้าประวัติศาสตร์."
+    "Jump several history pages.": "กระโดดหลายหน้าประวัติศาสตร์.",
+    "Automatic deletion of previously executed jobs older than x days": "ปรับค่างานพิมพ์ที่ประมวลผลมาแล้วโดยอัตโนมัติ มีอายุมากกว่า x วัน",
+    "(Backgroundjob is executed once daily)": "งานใต้ดินถูกประหารชีวิตวันละครั้ง)",
+    "never": "ไม่เลย"
 },
 "nplurals=1; plural=0;");

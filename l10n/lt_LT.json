@@ -205,7 +205,10 @@
         "Show the first history page.": "Rodyti pirmąjį istorijos puslapį.",
         "Show the last history page.": "Rodyti paskutinį istorijos puslapį.",
         "Show history page {page}.": "Rodyti istorijos puslapį {page}.",
-        "Jump several history pages.": "Pereiti kelis istorijos puslapius."
+        "Jump several history pages.": "Pereiti kelis istorijos puslapius.",
+        "Automatic deletion of previously executed jobs older than x days": "Automatinis anksčiau atliktų darbų, senesnių nei x dienos, pašalinimas",
+        "(Backgroundjob is executed once daily)": "(Background atliekamas vieną kartą per dieną)",
+        "never": "niekada"
     },
     "pluralForm": "nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);"
 }

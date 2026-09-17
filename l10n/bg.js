@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Покажи първата страница от историята.",
     "Show the last history page.": "Покажи последната страница от историята.",
     "Show history page {page}.": "Показване на страница {page}.",
-    "Jump several history pages.": "Прескочи няколко исторически страници."
+    "Jump several history pages.": "Прескочи няколко исторически страници.",
+    "Automatic deletion of previously executed jobs older than x days": "Автоматично изтриване на предварително изпълнени работни места, по-стари от x дни",
+    "(Backgroundjob is executed once daily)": "(Заден план се изпълнява веднъж дневно)",
+    "never": "никога"
 },
 "nplurals=2; plural=n != 1;");

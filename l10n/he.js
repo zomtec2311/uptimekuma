@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "הצג את דף ההיסטוריה הראשון.",
     "Show the last history page.": "הצג את דף ההיסטוריה האחרון.",
     "Show history page {page}.": "דף ההיסטוריה {page}.",
-    "Jump several history pages.": "קפוץ מספר דפי היסטוריה."
+    "Jump several history pages.": "קפוץ מספר דפי היסטוריה.",
+    "Automatic deletion of previously executed jobs older than x days": "מחיקה אוטומטית של עבודות שבוצעו בעבר מעל x ימים",
+    "(Backgroundjob is executed once daily)": "(עבודה חוזרת מבוצעת פעם ביום)",
+    "never": "אף פעם לא לעולם לא לעולם"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);");

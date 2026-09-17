@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "显示第一历史页.",
     "Show the last history page.": "显示上一个历史页.",
     "Show history page {page}.": "显示历史 第{page}页.",
-    "Jump several history pages.": "跳转到多个历史页面 ."
+    "Jump several history pages.": "跳转到多个历史页面 .",
+    "Automatic deletion of previously executed jobs older than x days": "自动删除已执行超过x天的任务",
+    "(Backgroundjob is executed once daily)": "(背景工作每天执行一次)",
+    "never": "永远"
 },
 "nplurals=1; plural=0;");

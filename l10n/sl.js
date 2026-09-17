@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Prikaži prvo stran zgodovine.",
     "Show the last history page.": "Prikaži zadnjo stran zgodovine.",
     "Show history page {page}.": "Prikaži zgodovino stran {page}.",
-    "Jump several history pages.": "Skoči več zgodovinskih strani."
+    "Jump several history pages.": "Skoči več zgodovinskih strani.",
+    "Automatic deletion of previously executed jobs older than x days": "Samodejno črtanje predhodno izvršenih opravil, starejših od x dni",
+    "(Backgroundjob is executed once daily)": "(Ozadjedelo se izvrši enkrat dnevno)",
+    "never": "nikoli"
 },
 "nplurals=4; plural=(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3));");

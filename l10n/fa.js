@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "اولین صفحه تاریخ را نشان دهید.",
     "Show the last history page.": "آخرین صفحه تاریخ را نشان دهید.",
     "Show history page {page}.": "صفحه تاریخ {page}.",
-    "Jump several history pages.": "پرش چند صفحه تاریخ."
+    "Jump several history pages.": "پرش چند صفحه تاریخ.",
+    "Automatic deletion of previously executed jobs older than x days": "حذف خودکار مشاغل قبلاً اعدام شده قدیمی تر از x روز",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob یک بار در روز اجرا می شود)",
+    "never": "هرگز"
 },
 "nplurals=2; plural=n > 1;");

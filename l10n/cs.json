@@ -206,7 +206,10 @@
         "Show the first history page.": "Zobrazit první stránku historie.",
         "Show the last history page.": "Zobrazit poslední stránku historie.",
         "Show history page {page}.": "Zobrazit historii stránky{page}.",
-        "Jump several history pages.": "Přeskočit několik historických stránek."
+        "Jump several history pages.": "Přeskočit několik historických stránek.",
+        "Automatic deletion of previously executed jobs older than x days": "Automatické vymazání dříve provedených pracovních míst starších x dnů",
+        "(Backgroundjob is executed once daily)": "(Backgroundjob se provádí jednou denně)",
+        "never": "nikdy"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);"
 }

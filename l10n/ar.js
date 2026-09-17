@@ -204,6 +204,9 @@ OC.L10N.register(
     "Show the first history page.": "اظهر صفحة التاريخ الأولى.",
     "Show the last history page.": "أظهر آخر صفحة تاريخية.",
     "Show history page {page}.": "صفحه التاريخ {page}.",
-    "Jump several history pages.": "اقفز عدة صفحات تاريخية."
+    "Jump several history pages.": "اقفز عدة صفحات تاريخية.",
+    "Automatic deletion of previously executed jobs older than x days": "الإنزال الآلي للوظائف التي سبق تنفيذها أكبر من x يوم",
+    "(Backgroundjob is executed once daily)": "(يُعدم العمل بأرضية مرة كل يوم)",
+    "never": "أبداً"
 },
 "nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));");

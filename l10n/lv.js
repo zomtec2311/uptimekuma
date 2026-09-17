@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Rādīt pirmo vēstures lapu.",
     "Show the last history page.": "Rādīt pēdējo vēstures lapu.",
     "Show history page {page}.": "Rādīt vēstures lapu {page}.",
-    "Jump several history pages.": "Lēkt vairākas vēstures lapas."
+    "Jump several history pages.": "Lēkt vairākas vēstures lapas.",
+    "Automatic deletion of previously executed jobs older than x days": "Automātiski dzēst iepriekš izpildītos darbus, kas vecāki par x dienām",
+    "(Backgroundjob is executed once daily)": "(Iepriekšējais darbs tiek veikts reizi dienā)",
+    "never": "nekad"
 },
 "nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);");

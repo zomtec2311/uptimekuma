@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Erakutsi historiako lehen orrialdea.",
     "Show the last history page.": "Erakutsi historiaren azken orrialdea.",
     "Show history page {page}.": "Erakutsi historiaren {page}. orrialdea.",
-    "Jump several history pages.": "Historiako hainbat orrialdetara joan."
+    "Jump several history pages.": "Historiako hainbat orrialdetara joan.",
+    "Automatic deletion of previously executed jobs older than x days": "Lehenago exekutatutako lanak x egun baino zaharragoak dira",
+    "(Backgroundjob is executed once daily)": "(Atzeko planoa egunero exekutatzen da)",
+    "never": "inoiz ez"
 },
 "nplurals=2; plural=n != 1;");

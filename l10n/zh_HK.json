@@ -206,7 +206,10 @@
         "Show the first history page.": "顯示第一個紀錄頁面。",
         "Show the last history page.": "顯示最後一個紀錄頁面。",
         "Show history page {page}.": "顯示歷史紀錄第{page}頁。",
-        "Jump several history pages.": "跳轉幾個歷史記錄頁面。"
+        "Jump several history pages.": "跳轉幾個歷史記錄頁面。",
+        "Automatic deletion of previously executed jobs older than x days": "自動刪除超過x天的先前執行作業",
+        "(Backgroundjob is executed once daily)": "（背景作業每天執行一次）",
+        "never": "從不"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

@@ -206,7 +206,10 @@
         "Show the first history page.": "Tampilkan halaman sejarah pertama.",
         "Show the last history page.": "Tampilkan halaman sejarah terakhir.",
         "Show history page {page}.": "Tampilkan halaman sejarah {page}.",
-        "Jump several history pages.": "Langsung beberapa halaman sejarah."
+        "Jump several history pages.": "Langsung beberapa halaman sejarah.",
+        "Automatic deletion of previously executed jobs older than x days": "Penghapusan otomatis dari tugas yang dieksekusi sebelumnya lebih tua dari x hari",
+        "(Backgroundjob is executed once daily)": "(Backgroundjob dijalankan sekali sehari)",
+        "never": "tidak pernah"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

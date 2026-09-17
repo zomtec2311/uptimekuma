@@ -206,7 +206,10 @@
         "Show the first history page.": "Mutasd meg az első történelem oldalt.",
         "Show the last history page.": "Mutasd meg az utolsó töri oldalt.",
         "Show history page {page}.": "A történelem {page}. oldal megjelenítése.",
-        "Jump several history pages.": "Ugrás több történelem oldalak."
+        "Jump several history pages.": "Ugrás több történelem oldalak.",
+        "Automatic deletion of previously executed jobs older than x days": "Az x napnál idősebb, korábban elvégzett munkahelyek automatikus törlése",
+        "(Backgroundjob is executed once daily)": "(A háttérmunkát naponta egyszer végzik)",
+        "never": "soha"
     },
     "pluralForm": "nplurals=2; plural=n != 1;"
 }

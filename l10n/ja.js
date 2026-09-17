@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "最初の履歴ページが表示されます.",
     "Show the last history page.": "最後の履歴ページを表示します.",
     "Show history page {page}.": "履歴ページを表示 {page}.",
-    "Jump several history pages.": "いくつかの履歴ページをジャンプします."
+    "Jump several history pages.": "いくつかの履歴ページをジャンプします.",
+    "Automatic deletion of previously executed jobs older than x days": "以前に実行したジョブの自動削除は、x 日以上",
+    "(Backgroundjob is executed once daily)": "(バックグラウンドジョブは毎日実行されます)",
+    "never": "決してない"
 },
 "nplurals=1; plural=0;");

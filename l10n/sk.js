@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Zobraziť prvú stránku histórie.",
     "Show the last history page.": "Zobraziť poslednú stránku histórie.",
     "Show history page {page}.": "Zobraziť stránku dejín {page}.",
-    "Jump several history pages.": "Skočiť niekoľko stránok histórie."
+    "Jump several history pages.": "Skočiť niekoľko stránok histórie.",
+    "Automatic deletion of previously executed jobs older than x days": "Automatické vymazanie predtým vykonaných úloh starších ako x dní",
+    "(Backgroundjob is executed once daily)": "(Backgroob sa vykonáva raz denne)",
+    "never": "nikdy"
 },
 "nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);");

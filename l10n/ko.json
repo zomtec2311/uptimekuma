@@ -206,7 +206,10 @@
         "Show the first history page.": "첫 번째 역사 페이지보기.",
         "Show the last history page.": "마지막 역사 페이지보기.",
         "Show history page {page}.": "역사 페이지 {page}.",
-        "Jump several history pages.": "몇 가지 역사 페이지를 이동합니다."
+        "Jump several history pages.": "몇 가지 역사 페이지를 이동합니다.",
+        "Automatic deletion of previously executed jobs older than x days": "이전에 실행된 작업의 자동 삭제 x 일 이상",
+        "(Backgroundjob is executed once daily)": "(Backgroundjob은 매일 한 번 실행됩니다)",
+        "never": "없음"
     },
     "pluralForm": "nplurals=1; plural=0;"
 }

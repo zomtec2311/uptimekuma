@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Visa första historiesidan.",
     "Show the last history page.": "Visa den sista historiesidan.",
     "Show history page {page}.": "Visa historiesidan {page}.",
-    "Jump several history pages.": "Hoppa flera historiesidor."
+    "Jump several history pages.": "Hoppa flera historiesidor.",
+    "Automatic deletion of previously executed jobs older than x days": "Automatisk borttagning av tidigare utförda jobb äldre än x dagar",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob utförs en gång dagligen)",
+    "never": "aldrig"
 },
 "nplurals=2; plural=n != 1;");

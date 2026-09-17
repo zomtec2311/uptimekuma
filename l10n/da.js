@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Vis den første historieside.",
     "Show the last history page.": "Vis den sidste historikside.",
     "Show history page {page}.": "Vis historik side {page}.",
-    "Jump several history pages.": "Spring over flere historiesider."
+    "Jump several history pages.": "Spring over flere historiesider.",
+    "Automatic deletion of previously executed jobs older than x days": "Automatisk sletning af tidligere udførte job ældre end x dage",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob udføres en gang dagligt)",
+    "never": "aldrig"
 },
 "nplurals=2; plural=n != 1;");

@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Mostra a primeira páxina de historia.",
     "Show the last history page.": "Amosa a última páxina de historia.",
     "Show history page {page}.": "Artigo {page}.",
-    "Jump several history pages.": "Saltar varias páxinas de historia."
+    "Jump several history pages.": "Saltar varias páxinas de historia.",
+    "Automatic deletion of previously executed jobs older than x days": "Deleción automática de traballos executados antes que x días",
+    "(Backgroundjob is executed once daily)": "(A caixa de seguridade é executada unha vez ao día)",
+    "never": "nunca nunca nunca nunca"
 },
 "nplurals=2; plural=n != 1;");

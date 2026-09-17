@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Montri la unuan historian paĝon.",
     "Show the last history page.": "Montri la lastan historian paĝon.",
     "Show history page {page}.": "La historiopaĝo {page}.",
-    "Jump several history pages.": "Aldonu plurajn historiopaĝojn."
+    "Jump several history pages.": "Aldonu plurajn historiopaĝojn.",
+    "Automatic deletion of previously executed jobs older than x days": "Aŭtomata forigo de antaŭe efektivigitaj laborlokoj pli malnovaj ol x tagoj",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob estas ekzekutita unufoje ĉiutage)",
+    "never": "neniam neniam neniam"
 },
 "nplurals=2; plural=n != 1;");

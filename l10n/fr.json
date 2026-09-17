@@ -206,7 +206,10 @@
         "Show the first history page.": "Afficher la première page d'historique.",
         "Show the last history page.": "Afficher la dernière page d'historique.",
         "Show history page {page}.": "Afficher l'historique page {page}.",
-        "Jump several history pages.": "Sauter plusieurs pages d'historique."
+        "Jump several history pages.": "Sauter plusieurs pages d'historique.",
+        "Automatic deletion of previously executed jobs older than x days": "Suppression automatique des tâches précédemment exécutées plus de x jours",
+        "(Backgroundjob is executed once daily)": "(Le travail de fond est exécuté une fois par jour)",
+        "never": "jamais"
     },
     "pluralForm": "nplurals=2; plural=(n != 1);"
 }

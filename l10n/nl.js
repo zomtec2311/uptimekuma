@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Toon de eerste geschiedenispagina.",
     "Show the last history page.": "Laat de laatste geschiedenispagina zien.",
     "Show history page {page}.": "Toon geschiedenis pagina {page}.",
-    "Jump several history pages.": "Spring verschillende geschiedenispagina's."
+    "Jump several history pages.": "Spring verschillende geschiedenispagina's.",
+    "Automatic deletion of previously executed jobs older than x days": "Automatische verwijdering van eerder uitgevoerde taken ouder dan x dagen",
+    "(Backgroundjob is executed once daily)": "(Achtergrondjob wordt eenmaal per dag uitgevoerd)",
+    "never": "nooit"
 },
 "nplurals=2; plural=n != 1;");

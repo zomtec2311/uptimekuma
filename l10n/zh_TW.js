@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the last history page.": "Show the last history page.",
     "Show history page {page}.": "顯示歷史紀錄第{page}頁。",
     "Jump several history pages.": "跳轉幾個歷史記錄頁面。",
-    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely."
+    "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash PHP script, Python script or other caller more precisely.": "External scripts can send the optional X-UptimeKuma-Source header. This lets you identify an executed bash, PHP script, Python script or other caller more precisely.",
+    "Automatic deletion of previously executed jobs older than x days": "Automatic deletion of previously executed jobs older than x days",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob is executed once daily)",
+    "never": "never"
 },
 "nplurals=1; plural=0;");

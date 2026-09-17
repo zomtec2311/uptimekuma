@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Εμφάνιση της πρώτης σελίδας ιστορίας.",
     "Show the last history page.": "Δείξε την τελευταία σελίδα ιστορίας.",
     "Show history page {page}.": "Εμφάνιση ιστορικού σελίδα {page}.",
-    "Jump several history pages.": "Πήδα αρκετές σελίδες ιστορίας."
+    "Jump several history pages.": "Πήδα αρκετές σελίδες ιστορίας.",
+    "Automatic deletion of previously executed jobs older than x days": "Αυτόματη διαγραφή των εργασιών που εκτελέστηκαν προηγουμένως παλαιότερες από x ημέρες",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob εκτελείται μία φορά την ημέρα)",
+    "never": "ποτέ"
 },
 "nplurals=2; plural=n != 1;");

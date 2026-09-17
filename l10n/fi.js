@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Näytä historian ensimmäinen sivu.",
     "Show the last history page.": "Näytä historian viimeinen sivu.",
     "Show history page {page}.": "Näytä historia sivu {page}.",
-    "Jump several history pages.": "Hypätä useita historian sivuja."
+    "Jump several history pages.": "Hypätä useita historian sivuja.",
+    "Automatic deletion of previously executed jobs older than x days": "Automaattinen poisto aiemmin toteutettuja työpaikkoja yli x päivää",
+    "(Backgroundjob is executed once daily)": "(Takatyö suoritetaan kerran päivässä)",
+    "never": "koskaan"
 },
 "nplurals=2; plural=n != 1;");

@@ -206,7 +206,10 @@
         "Show the first history page.": "Arată prima pagină de istorie.",
         "Show the last history page.": "Arată ultima pagină de istorie.",
         "Show history page {page}.": "Arată pagina de istorie {page}.",
-        "Jump several history pages.": "Sari mai multe pagini de istorie."
+        "Jump several history pages.": "Sari mai multe pagini de istorie.",
+        "Automatic deletion of previously executed jobs older than x days": "Ștergerea automată a locurilor de muncă executate anterior mai vechi de x zile",
+        "(Backgroundjob is executed once daily)": "(Se execută o dată pe zi)",
+        "never": "niciodată"
     },
     "pluralForm": "nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n != 1 && n % 100 >= 1 && n % 100 <= 19) ? 1 : 2);"
 }

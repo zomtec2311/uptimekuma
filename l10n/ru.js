@@ -207,6 +207,9 @@ OC.L10N.register(
     "Show the first history page.": "Покажите первую страницу истории.",
     "Show the last history page.": "Покажите последнюю страницу истории.",
     "Show history page {page}.": "Страница истории {page}.",
-    "Jump several history pages.": "Перейдите на несколько страниц истории."
+    "Jump several history pages.": "Перейдите на несколько страниц истории.",
+    "Automatic deletion of previously executed jobs older than x days": "Автоматическое удаление ранее выполненных рабочих мест старше х дней",
+    "(Backgroundjob is executed once daily)": "(Backgroundjob выполняется один раз в день)",
+    "never": "никогда"
 },
 "nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);");
