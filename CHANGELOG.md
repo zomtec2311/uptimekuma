@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.3
+
+### Added
+- new settings
+- Instance is deleted -> related jobs are also deleted
+- Job is deleted -> related tokens are also deleted -> Jobs will also be deleted from history
+- 24 hourly background job to automatically delete old entries in the history db. Age of the Jobs to be deleted is adjustable in the settings
+
+### Changed
+- **l10n:** Language files extended by additional phrases
+
 ## 1.0.2
 
 ### Changed
